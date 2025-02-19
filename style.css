@@ -61,25 +61,24 @@ header {
   font-weight: bold;
 }
 
-
-.wrapper{
+.wrapper {
   margin-left: 10px;
 }
 
-.test{
+.test {
   margin-bottom: 5000px;
 }
 
 footer {
-  background-color: #37474F; /* Dark charcoal gray for contrast */
-  color: #FFFFFF; /* White text for readability */
+  background-color: #37474f; /* Dark charcoal gray for contrast */
+  color: #ffffff; /* White text for readability */
   padding: 20px 0;
   text-align: center;
 }
 
 .backtotop {
   display: inline-block;
-  color: #FFC107;
+  color: #ffc107;
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 15px;
@@ -87,7 +86,7 @@ footer {
 }
 
 .backtotop:hover {
-  color: #FF8F00;
+  color: #ff8f00;
 }
 
 .footer-container {
@@ -107,7 +106,7 @@ footer {
 
 .footer-section h3,
 .footer-section h4 {
-  color: #FFC107; /* Amber for consistency */
+  color: #ffc107; /* Amber for consistency */
   margin-bottom: 10px;
 }
 
@@ -126,13 +125,13 @@ footer {
 }
 
 .footer-section ul li a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .footer-section ul li a:hover {
-  color: #FFC107;
+  color: #ffc107;
 }
 
 .footer-bottom {
