@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif;
+}
+
+li,
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3%;
+  background-color: #ffc107;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+  color: #263238;
+}
+
+.navlinks li a.active {
+  color: #00897b;
+}
+
+.navlinks li a:hover {
+  color: #e67e00;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.brand-name {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.wrapper{
+  margin-left: 10px;
+}
+
+.test{
+  margin-bottom: 5000px;
+}
+
+footer {
+  background-color: #37474F; /* Dark charcoal gray for contrast */
+  color: #FFFFFF; /* White text for readability */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.backtotop {
+  display: inline-block;
+  color: #FFC107;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.backtotop:hover {
+  color: #FF8F00;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #FFC107; /* Amber for consistency */
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+  color: #FFC107;
+}
+
+.footer-bottom {
+  background-color: #263238; /* Slightly darker gray for separation */
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footerlogo{
+  align-content: center;
+}
