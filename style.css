@@ -145,6 +145,15 @@ footer {
   margin: 0;
 }
 
-.footerlogo{
-  align-content: center;
+.footerlogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.footerlogo img {
+  height: 40px;
+  width: auto;
 }
