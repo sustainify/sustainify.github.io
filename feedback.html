@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+
+/* Background Video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.wrapper {
+    margin-left: 500px;
+    
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    max-width: 500px;
+    width: 100%;
+    
+    
+}
+
+/* Form Heading */
+h1 {
+    text-align: center;
+    color: #FFD700;
+    font-weight: 600;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #FF8C00;
+    box-shadow: 0px 0px 8px rgba(255, 140, 0, 0.5);
+}
+
+/* Labels and legends */
+fieldset {
+    border: none;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Radio Buttons */
+label {
+    font-size: 16px;
+    color: #444;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+input[type="radio"] {
+    transform: scale(1.1);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #FFD700, #FF8C00);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+/* Button Hover */
+button:hover {
+    background: linear-gradient(90deg, #FF8C00, #FFD700);
+    box-shadow: 0px 5px 15px rgba(255, 140, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header class="navigation-bar">
+      <div class="logo-container">
+        <a href="home.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
+        <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
+      </div>
+      <nav>
+        <ul class="navlinks">
+          <li><a class="active" href="home.html">Home</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="profile.html">User Profile</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="Team.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+  <div class="wrapper">
+    <form action="#" method="#">
+    <!-- Background Video -->
+    <video autoplay muted id="bg-video">
+      <source src="video.mp4" />
+    </video>
+
+    <div class="container">
+      <form id="feedback-form">
+        <h1>Give Your Feedback</h1>
+
+        <!-- Name Input -->
+        <div class="input-group">
+          <label for="fullname">Enter your Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="FullName"
+            placeholder="Your Name"
+          />
+        </div>
+
+        <!-- Email Input -->
+        <div class="input-group">
+          <label for="email">Enter your Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Enter your Email"
+          />
+        </div class="input-group">
+          <label for="number">Enter you mobile number:</label>
+          <input
+            type="tel"
+            id="number"
+            name="number"
+            placeholder="Enter your mobile number"
+          />
+       
+
+        <!-- First-time Visit -->
+        <fieldset>
+          <legend>Was this your first time visiting?</legend>
+          <label>
+            <input type="radio" name="first-visit" value="yes" /> Yes</label
+          >
+          <label>
+            <input type="radio" name="first-visit" value="no" /> No</label
+          >
+        </fieldset>
+
+        <!-- Website Experience -->
+        <fieldset>
+          <legend>Was this website informative and easy to navigate?</legend>
+          <label>
+            <input type="radio" name="navigation" value="yes" /> Yes</label
+          >
+          <label> <input type="radio" name="navigation" value="no" /> No</label>
+        </fieldset>
+
+        <!-- Improvement Suggestions -->
+        <fieldset>
+          <legend>If "No", suggest any improvements for the future:</legend>
+          <textarea
+            id="improvements"
+            cols="50"
+            rows="4"
+            placeholder="Enter your opinions here..."
+          ></textarea>
+        </fieldset>
+
+        <!-- Subscription Preferences -->
+        <fieldset>
+          <legend>
+            Would you like to receive updates about the website and offers?
+          </legend>
+          <label for="updates-method">Choose a method:</label>
+          <select id="updates-method" name="subscription-method">
+            <option value="email">Email</option>
+            <option value="phone">Mobile Number</option>
+            <option value="sms">SMS</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Leave us Feedback</legend>
+          <input type="radio" name="feedback" value="excellent" /> Excellent
+          <br>
+          <input type="radio" name="feedback" value="good" /> Good
+          <br>
+          <input type="radio" name="feedback" value="average" /> Average
+          <br>
+          <input type="radio" name="feedback" value="poor" /> Poor
+        </fieldset>
+
+        <!-- Additional Questions -->
+        <fieldset>
+          <legend>Do you have any additional questions or requests?</legend>
+          <textarea
+            id="additional-comments"
+            cols="50"
+            rows="4"
+            placeholder="Add your thoughts here..."
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" name="terms" value="agree" /> I agree to the
+          terms and conditions
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit-btn">Send</button>
+        <button type="reset" id="reset-btn">Reset</button>
+      </form>
+    </div>
+  </form>
+  </div>
+  <footer>
+    <a href="#top" class="backtotop">Back to Top</a>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3 class="footerlogo">
+          <img class="logo" src="images/logo.png" alt="logo" />SUSTAINIFY
+        </h3>
+        <p>
+          SUSTAINIFY promotes sustainable urban development through renewable
+          energy, green infrastructure, and smart planning to create cleaner,
+          healthier, and more resilient communities.
+        </p>
+      </div>
+
+      <div class="footer-section links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Splash</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Initiatives</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section editors">
+        <h4>Editors</h4>
+        <ul>
+          <li><a href="#">Thinura</a></li>
+          <li><a href="#">Chameen</a></li>
+          <li><a href="#">Akila</a></li>
+          <li><a href="#">Chathila</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </body>
+</html>
