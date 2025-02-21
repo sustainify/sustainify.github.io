@@ -61,14 +61,6 @@ header {
   font-weight: bold;
 }
 
-.wrapper {
-  margin-left: 10px;
-}
-
-.test {
-  margin-bottom: 5000px;
-}
-
 footer {
   background-color: #37474f; /* Dark charcoal gray for contrast */
   color: #ffffff; /* White text for readability */
