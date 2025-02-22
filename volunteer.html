@@ -6,6 +6,233 @@
     <title>Sustainify</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Volunteer Page</title>
+    <link rel="stylesheet" href="style.css">
+        <style>
+      .scrollable-section {
+        width: 70%;
+        height: 700px; /* Set height for scrolling */
+        overflow-y: auto; /* Enables vertical scrolling */
+        border: 2px solid #8A8A8A;
+        padding: 10px;
+        margin-top: 60px;
+        margin-left:100px ;
+
+      }
+      body {
+        background-color: #FFF8F0;
+        font-family: "Inter",sans-serif;
+          }
+      #introd{
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 2px 2px 3px 2px; 
+      }
+      #filtered{
+        margin: 0 auto;
+        margin-top: -55px;
+        margin-left: 750px;
+      }
+      #volunteerboxes{
+           display: flex;
+           margin-top: 50px;
+           margin-left: 40px;
+
+      }
+      .volunteer-box{
+          width: 80%;
+          display: flex;
+
+      }   
+      .volunteer-card{
+        background-color: white;
+        margin: 0 10px;
+        border-radius: 10px;
+        box-shadow: 6px 2px 25px -9px #0000001A;
+        padding: 20px;
+        margin-bottom: 10px;
+        }
+        .service{
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: #2858FF;
+        }
+        .volunteer-img{
+            color: #ffc107;
+            margin-top: 8px;
+        }
+        #volun-img{
+          width: 100%;
+          height: 150px;
+        }
+        .volunteer-description{
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #8A8A8A;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .details-section{
+        padding: 0;
+        list-style: none;
+        margin-bottom: 8px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #666666;
+        }
+        .contact-button {
+            width: 100%;
+            height: 44px;
+            border-radius: 4px;
+            border: 2px solid;
+            color: #2F2F2F;
+            background-color: white;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            margin: 6px;
+
+        }
+        .contact-button:hover {
+            background-color:#ffc107 ;
+            color:white;
+            cursor: pointer;
+        }
+        .pricing-card.card-2{
+            background-color: #FFd748;
+        }
+        #details_box{
+           display: flex;
+        }
+        .detail-box{
+          width: 33.33%;
+        }
+        .details-card{
+            background-color: rgb(235, 233, 233);
+            margin: 0 10px 10px 10px;
+            margin-top: 10px;
+            height: 60px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .ratings{
+            font-family: Poppins;
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 54px;
+            color: #ffc107;
+            margin-top: 30px;
+            margin-left:100px ;
+        }
+        .rateper{
+            font-family: Poppins;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 21px;
+            line-height: 30px;
+            color: #8A8A8A;
+        }
+        #volunteer-experience{
+            font-family: Poppins;
+            font-size: 22px;
+            margin-top: 60px;
+            margin-left:100px ;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        h3{
+            font-family: Poppins;
+            font-size: 16px;
+            margin-left:100px ;
+            font-weight: 500;
+        }
+        #review-codition{
+            font-family: Poppins;
+            font-size: 12px;
+            margin-left:100px ;
+            font-weight: 300;
+        }
+        .review-bottun{
+            font-family: Poppins;
+            font-size: 14px;
+            margin-left:120px ;
+            font-weight: 500;
+            margin-top: 150px;
+            background-color: #FFF8F0;
+            color: #ffc107;
+            height: 50px;
+            width: 200px;
+            border-radius: 30px;
+            
+        }
+        .review-bottun:hover {
+          background-color:#ffc107 ;
+          color:white;
+          cursor: pointer;
+        }
+        #rating-section{
+          display: flex;
+          margin-bottom: 200px;
+
+        }
+        .rating-detail-section{
+          width: 60%;
+          height: 500px;
+          
+        }
+        #sub-heding{
+          margin-top: 5px;
+          margin-left: 5px;
+          font-weight: 500;
+          font-family: Poppins;
+          color:#8A8A8A ;
+        }
+        .human-reviews-section{
+          margin-top: 65px;
+          margin-left: 60px;
+        }
+        #human-reviews{
+          width: 60%;
+          margin-top: 10px;
+          display: flex;
+
+        }
+        #send-feedback-button{
+          margin-left: 380px;
+          padding: 10px;
+          background-color: #FFF8F0;
+          color: #ffc107;
+          font-family: Poppins;
+        }
+        #cancel-button{
+          margin-left: 6px;
+          padding: 10px;
+          padding: 10px;
+          background-color: #FFF8F0;
+          color: #ffc107;
+          font-family: Poppins;
+        }
+        #send-feedback-button:hover {
+          background-color:#ffc107 ;
+          color:white;
+          cursor: pointer;
+        }
+        #cancel-button:hover {
+          background-color:#ffc107 ;
+          color:white;
+          cursor: pointer;  
+        }  
+    </style>
   </head>
   <body>
     <header>
@@ -31,9 +258,211 @@
     <main>
       <div class="wrapper">
         <h1 style="margin-bottom: 668px; text-align: center">
-          Under Maintainence
         </h1>
-        <!--Your Content Goes In Here-->
+    <div class="scrollable-section">
+        <div id="introd">
+            <h1>69 volunteer programs found</h3>
+          <div id="sub-heding">
+            <p>Matching with 1 Filter</p>
+            <p>Showing 1 to 07 of 69 results</p>
+          </div>   
+        </div>
+
+        <div id="filtered">
+        <form>
+            <label for="filter"></label>
+            <select id="filter" name="filter">
+              <option value="mostpop">MOST POPULAR</option>
+              <option value="newestfirst">NEWEST FIRST</option>
+              <option value="toprated">TOP RATED</option>
+            </select>
+        </form>
+        </div>
+        <dive id="volunteerboxes"> 
+          <div class="volunteer-box">
+              <div class="volunteer-card">
+                  <div class="service">
+                    Construction and Renovation in Kandy
+                  </div>
+                  <div class="volunteer-img">
+                    <img  id="volun-img" src="bg5.jpg" >
+                  </div>                
+                  <div id="details_box">
+                      <div class="detail-box">
+                        <div class="details-card"></div>
+                      </div>
+                      <div class="detail-box">
+                        <div class="details-card"></div>
+                      </div>
+                      <div class="detail-box">
+                        <div class="details-card"></div>
+                      </div>
+                  </div>
+                      <ul class="details-section">
+                         <li>✅Duration: 1 - 12 weeks</li> 
+                         <li>✅Programs start every Monday</li> 
+                         <li>✅Temples, monasteries and schools</li> 
+                         <li>✅Volunteers aged 16+ and families</li> 
+                      </ul>
+                    <div class="volunteer-description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                    </div>  
+                  <button class="contact-button"> VIEW PROJECT</button>
+                  <button class="contact-button"> APPLY </button>
+              </div>
+
+              <div class="volunteer-card">
+                <div class="service">
+                  Construction and Renovation in Kandy
+                </div>
+                <div class="volunteer-img">
+                  <img  id="volun-img" src="bg5.jpg" >
+                </div>                
+                <div id="details_box">
+                    <div class="detail-box">
+                      <div class="details-card"></div>
+                    </div>
+                    <div class="detail-box">
+                      <div class="details-card"></div>
+                    </div>
+                    <div class="detail-box">
+                      <div class="details-card"></div>
+                    </div>
+                </div>
+                    <ul class="details-section">
+                       <li>✅Duration: 1 - 12 weeks</li> 
+                       <li>✅Programs start every Monday</li> 
+                       <li>✅Temples, monasteries and schools</li> 
+                       <li>✅Volunteers aged 16+ and families</li> 
+                    </ul>
+                  <div class="volunteer-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                  </div>  
+                <button class="contact-button"> VIEW PROJECT</button>
+                <button class="contact-button"> APPLY </button>
+            </div>
+          </div>
+        </dive>  
+        <dive id="volunteerboxes"> 
+          <div class="volunteer-box">
+              <div class="volunteer-card">
+                  <div class="service">
+                    Construction and Renovation in Kandy
+                  </div>
+                  <div class="volunteer-img">
+                    <img  id="volun-img" src="bg5.jpg" >
+                  </div>                
+                  <div id="details_box">
+                      <div class="detail-box">
+                        <div class="details-card"></div>
+                      </div>
+                      <div class="detail-box">
+                        <div class="details-card"></div>
+                      </div>
+                      <div class="detail-box">
+                        <div class="details-card"></div>
+                      </div>
+                  </div>
+                      <ul class="details-section">
+                         <li>✅Duration: 1 - 12 weeks</li> 
+                         <li>✅Programs start every Monday</li> 
+                         <li>✅Temples, monasteries and schools</li> 
+                         <li>✅Volunteers aged 16+ and families</li> 
+                      </ul>
+                    <div class="volunteer-description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                    </div>  
+                  <button class="contact-button"> VIEW PROJECT</button>
+                  <button class="contact-button"> APPLY </button>
+              </div>
+
+              <div class="volunteer-card">
+                <div class="service">
+                  Construction and Renovation in Kandy
+                </div>
+                <div class="volunteer-img">
+                  <img  id="volun-img" src="bg5.jpg" >
+                </div>                
+                <div id="details_box">
+                    <div class="detail-box">
+                      <div class="details-card"></div>
+                    </div>
+                    <div class="detail-box">
+                      <div class="details-card"></div>
+                    </div>
+                    <div class="detail-box">
+                      <div class="details-card"></div>
+                    </div>
+                </div>
+                    <ul class="details-section">
+                       <li>✅Duration: 1 - 12 weeks</li> 
+                       <li>✅Programs start every Monday</li> 
+                       <li>✅Temples, monasteries and schools</li> 
+                       <li>✅Volunteers aged 16+ and families</li> 
+                    </ul>
+                  <div class="volunteer-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                  </div>  
+                <button class="contact-button"> VIEW PROJECT</button>
+                <button class="contact-button"> APPLY </button>
+            </div>
+          </div>
+        </dive>  
+      </div>
+
+    <div id="rating-section">
+      <div class="rating-detail-section">
+        <p id="volunteer-experience">What recent volunteers said about their experience </p>
+        <div class="ratings">9.4 <span class="rateper"> /10</span></div>
+        <h3>Exceptional</h3> 
+        <p id="review-codition">Reviews are verified unless lablelled otherwise. </p>
+        <button class="review-bottun"> See all 499 reviews </button>
+      </div>
+      
+      <div class="human-reviews-section">
+
+        <h4>Recent reviews</h4>
+        <div id="human-reviews" >
+          <dive class="review" style="border-radius: 10px;padding: 10px;border: 1px solid gray; margin-right: 20px;" >
+            <h5 style="margin-bottom: 10px;">10/10 Excelent</h5>
+            <div style="font-family: Poppins; font-weight: 200;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+            </div>
+            <p style="color:#ffc107; margin-top: 5px; margin-bottom: 10px;">See more</p>
+            <dive style="font-family:Poppins ; font-weight: 500; font-size: 14px;">
+              <p>Elon Musk.</p>
+              <p style="margin-bottom: 20px;">Sept 14, 2025</p>
+            </dive>
+          </dive>
+
+          <dive class="review" style="border-radius: 10px;padding: 10px;border: 1px solid gray; margin-right: 20px;" >
+            <h5 style="margin-bottom: 10px;">10/10 Excelent</h5>
+            <div style="font-family: Poppins; font-weight: 200;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+            </div>
+            <p style="color:#ffc107; margin-top: 10px; margin-bottom: 10px;">See more</p>
+            <dive style="font-family:Poppins ; font-weight: 500; font-size: 14px;">
+              <p>Bill Gates.</p>
+              <p style="margin-bottom: 20px;">Nov 11, 2025</p>
+            </dive>
+          </dive>
+        </div>
+
+        <div>
+          <h5 style="margin-top: 50px; font-family: Poppins; font-weight: 500; font-size: 16px;">Send US Your review</h5>
+          <p style="color: black; font-size: 14px; margin-top: 20px; font-family: Poppins; margin-bottom: 10px;" >GOt suggestions? We'd love to hear them!<span style="color: #8A8A8A;">(Optional)</span></p>
+          <textarea id="textarea" rows="10" cols="80"></textarea>
+          <p style="color: #2F2F2F; font-size: 12px; font-family: Poppins; margin-top: 50px; max-width: 200px;" >Privacy Policy &nbsp &nbsp Help Center</p>
+          <button id="send-feedback-button"> Send Feedback </button>
+          <button id="cancel-button"> Cancel </button>
+        </div>
+      </div>
+    </div>
+
       </div>
     </main>
     <footer>
