@@ -1,12 +1,12 @@
 .wrapper{
     margin: 0;
 }
+
 svg{
-    border: 1px;
+    border: none;
 }
+
 .boxes rect{
-    width: 10%;
-    height: 7%;
     fill: gold;
     rx: 17.5px;
     ry: 17.5px;
