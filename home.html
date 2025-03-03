@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <style>
+      /* Hero Section */
+      .hero {
+        background: url("images/hero-bg.jpg") no-repeat center center/cover;
+        color: rgb(0, 0, 0);
+        padding: 100px 20px;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      .hero-content p {
+        font-size: 1.5rem;
+      }
+
+      /* Mission Section */
+      .mission {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #ffffff;
+      }
+
+      .mission h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .mission p {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Content Links Section */
+      .content-links {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .content-links h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 250px;
+        text-decoration: none;
+        color: #333;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card-content h3 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      .card-content p {
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="home.html"
+          ><img class="logo" src="images/logo.svg" alt="logo"
+        /></a>
+        <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
+      </div>
+      <nav>
+        <ul class="navlinks">
+          <li><a class="active" href="home.html">Home</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="profile.html">User Profile</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to Sustainify</h1>
+          <p>Empowering Sustainable Urban Development</p>
+        </div>
+      </section>
+
+      <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+          Sustainify is committed to supporting the United Nations Sustainable
+          Development Goal (SDG) 11:
+          <strong>Sustainable Cities and Communities</strong>. We aim to promote
+          renewable energy, green infrastructure, and smart urban planning to
+          create cleaner, healthier, and more resilient communities.
+        </p>
+      </section>
+
+      <section class="content-links">
+        <h2>Explore Our Content</h2>
+        <div class="card-container">
+          <a href="content_ST1.html" class="card">
+            <img src="images/content1.jpg" alt="Renewable Energy" />
+            <div class="card-content">
+              <h3>Renewable Energy</h3>
+              <p>Learn about sustainable energy solutions for urban areas.</p>
+            </div>
+          </a>
+          <a href="content_ST2.html" class="card">
+            <img src="images/content2.jpg" alt="Green Infrastructure" />
+            <div class="card-content">
+              <h3>Green Infrastructure</h3>
+              <p>Discover how green spaces can transform cities.</p>
+            </div>
+          </a>
+          <a href="content_ST3.html" class="card">
+            <img src="images/content3.jpg" alt="Smart Planning" />
+            <div class="card-content">
+              <h3>Smart Planning</h3>
+              <p>Explore innovative urban planning strategies.</p>
+            </div>
+          </a>
+          <a href="content_ST4.html" class="card">
+            <img src="images/content4.jpg" alt="Community Resilience" />
+            <div class="card-content">
+              <h3>Community Resilience</h3>
+              <p>Find out how communities can adapt to climate change.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#top" class="backtotop">Back to Top</a>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3 class="footerlogo">
+            <img class="logo" src="images/logo.png" alt="logo" />SUSTAINIFY
+          </h3>
+          <p>
+            SUSTAINIFY promotes sustainable urban development through renewable
+            energy, green infrastructure, and smart planning to create cleaner,
+            healthier, and more resilient communities.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Splash</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Initiatives</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section editors">
+          <h4>Editors</h4>
+          <ul>
+            <li><a href="#">Thinura</a></li>
+            <li><a href="#">Chameen</a></li>
+            <li><a href="#">Akila</a></li>
+            <li><a href="#">Chathila</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

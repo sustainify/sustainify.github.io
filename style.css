@@ -9,7 +9,7 @@
 
 li,
 a {
-  color: #000000;
+  color: #ffc107;
   text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 3%;
-  background-color: #ffc107;
+  background-color: #3c3c3c;
 }
 
 .navlinks {
@@ -32,15 +32,15 @@ header {
 
 .navlinks li a {
   transition: all 0.3s ease 0s;
-  color: #263238;
+  color: #ffffff;
 }
 
 .navlinks li a.active {
-  color: #00897b;
+  color: #ff9800;
 }
 
 .navlinks li a:hover {
-  color: #e67e00;
+  color: #ffc107;
 }
 
 .logo-container {
@@ -62,7 +62,7 @@ header {
 }
 
 footer {
-  background-color: #37474f; /* Dark charcoal gray for contrast */
+  background-color: #3c3c3c; /* Dark charcoal gray for contrast */
   color: #ffffff; /* White text for readability */
   padding: 20px 0;
   text-align: center;
@@ -127,7 +127,7 @@ footer {
 }
 
 .footer-bottom {
-  background-color: #263238; /* Slightly darker gray for separation */
+  background-color: #282828; /* Slightly darker gray for separation */
   padding: 10px 0;
   font-size: 14px;
 }

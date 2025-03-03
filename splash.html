@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="4; url=home.html">
+    <title>Sustainify</title>
+    <!-- <link rel="stylesheet" href="stylesheet.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap"rel="stylesheet"/>
+
+    <style>
+      .intro {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        transition: 6s;
+      }
+
+      body {
+        background-color: #ffc107;
+        background-image: url("images/gg.jpg");
+      }
+
+      .container {
+        position: absolute;
+        left: 29%;
+        top: 15%;
+        transform: translate(-50%, -50%);
+      }
+      .box {
+        color: lightcyan;
+        display: flex;
+        font-size: 160px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 850;
+        -webkit-box-reflect: below 0
+          linear-gradient(to bottom, transparent, rgba(0 0 0 /50));
+        padding-left: 30px;
+      }
+      .box span {
+        position: relative;
+        line-height: 0.82em;
+        position: relative;
+        z-index: 1;
+        margin-left: -18px;
+        /* background: #f5a119; */
+      }
+      .box span:before {
+        content: "";
+        width: 100%;
+        height: 240%;
+        position: absolute;
+        left: 1px;
+        /* box-shadow: -31px 0px 31px #f5a119; */
+        top: 0;
+        z-index: -1;
+        top: -24%;
+      }
+      .box span:last-child::after {
+        content: "";
+        width: 150%;
+        height: 240%;
+        position: absolute;
+        left: 101%;
+        /* box-shadow: -50px 0px 31px #f5a119; */
+        top: 0;
+        top: -40%;
+      }
+      .box span {
+        animation: animate 3s;
+      }
+      @keyframes animate {
+        0% {
+          margin-left: -168px;
+        }
+        100% {
+          margin-left: -18px;
+        }
+      }
+
+      .wrap {
+        margin-top: 600px;
+        margin-right: 600px;
+        perspective: 1000px;
+      }
+      .cube {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        transform-style: preserve-3d;
+      }
+      .cube img {
+        position: absolute;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+      }
+      .cube img:nth-child(1) {
+        transform: rotateY(0deg) translateZ(100px);
+      }
+      .cube img:nth-child(2) {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      .cube img:nth-child(3) {
+        transform: rotateY(180deg) translateZ(100px);
+      }
+      .cube img:nth-child(4) {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+      .cube img:nth-child(5) {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      .cube img:nth-child(6) {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      .cube {
+        animation: loop 10s linear infinite;
+      }
+      @keyframes loop {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        100% {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }
+
+      #misson {
+        font-size: 38px;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-family: Amarante;
+        margin-left: 1200px;
+        color: aliceblue;
+        display: grid;
+        grid-template-columns: 150px;
+      }
+      #members {
+        font-size: 14px;
+        margin: 0 auto;
+        margin-top: 195px;
+        margin-left: 36px;
+        color: aliceblue;
+        display: grid;
+        grid-template-columns: 150px;
+      }
+      #names {
+        font-size: 14px;
+        margin: 0 auto;
+        margin-top: -50px;
+        margin-left: 200px;
+        color: aliceblue;
+        display: grid;
+        grid-template-columns: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="container">
+        <div class="box">
+          <span>S</span>
+          <span>U</span>
+          <span>S</span>
+          <span>T</span>
+          <span>A</span>
+          <span>I</span>
+          <span>N</span>
+          <span>I</span>
+          <span>F</span>
+          <span>Y</span>
+        </div>
+      </div>
+      <div id="misson">
+        <p>
+          <b>
+            To make cities safe, inclusive, resilient, and environmentally
+            sustainable
+          </b>
+        </p>
+      </div>
+      <div id="members">
+        <h2>Group Members</h2>
+      </div>
+      <div id="names">
+        <p>
+          >&nbsp Akila &nbsp >&nbsp Chammen &nbsp >&nbsp Chathila &nbsp >&nbsp
+          Thinura
+        </p>
+      </div>
+    </div>
+    <div>
+      <!-- </div>
+    
+        <div class="wrap">
+            <div class="cube">
+                <img src="image1.png">
+                <img src="image2.png">
+                <img src="image2.1.png">
+                <img src="image3.png">
+                <img src="image4.png">
+                <img src="image5.png">
+            </div> -->
+    </div>
+  </body>
+</html>
