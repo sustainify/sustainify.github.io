@@ -121,6 +121,28 @@ button:hover {
     box-shadow: 0px 5px 15px rgba(255, 140, 0, 0.4);
     transform: scale(1.05);
 }
+.error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    display: none; /* Hidden initially */
+}
+
+/* Show error messages only when the field is invalid */
+input:invalid + .error-message {
+    display: block;
+}
+
+/* Highlight invalid fields with a red border */
+input:invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+/* Highlight valid fields with a green border */
+input:valid {
+    border: 2px solid green;
+}
 
 /* Animation */
 @keyframes fadeIn {
@@ -160,7 +182,7 @@ button:hover {
     <form action="#" method="#">
     <!-- Background Video -->
     <video autoplay muted id="bg-video">
-      <source src="video.mp4" />
+      <source src="videos/video.mp4" />
     </video>
 
     <div class="container">
@@ -173,10 +195,13 @@ button:hover {
           <input
             type="text"
             id="fullname"
+            class="req"
             name="FullName"
             placeholder="Your Name"
+            required title="Enter your name"
           />
         </div>
+        <div class="error-message">This field is required.</div>
 
         <!-- Email Input -->
         <div class="input-group">
@@ -186,14 +211,17 @@ button:hover {
             id="email"
             name="Email"
             placeholder="Enter your Email"
+            required title="Enter a valid Email Address"
           />
         </div class="input-group">
-          <label for="number">Enter you mobile number:</label>
+          <label for="number">Enter your mobile number:</label>
           <input
             type="tel"
             id="number"
             name="number"
             placeholder="Enter your mobile number"
+            pattern="[0-9]{10}"
+            required title="Enter 10 digits mobile number"
           />
        
 
@@ -221,11 +249,12 @@ button:hover {
         <fieldset>
           <legend>If "No", suggest any improvements for the future:</legend>
           <textarea
-            id="improvements"
+            id="textArea"
             cols="50"
             rows="4"
             placeholder="Enter your opinions here..."
           ></textarea>
+          <p>Word Count: <span id="wordCount">0</span></p>
         </fieldset>
 
         <!-- Subscription Preferences -->
@@ -234,37 +263,55 @@ button:hover {
             Would you like to receive updates about the website and offers?
           </legend>
           <label for="updates-method">Choose a method:</label>
-          <select id="updates-method" name="subscription-method">
+          <select id="updates-method" name="subscription-method" required>
             <option value="email">Email</option>
             <option value="phone">Mobile Number</option>
             <option value="sms">SMS</option>
           </select>
         </fieldset>
         <fieldset>
-          <legend>Leave us Feedback</legend>
-          <input type="radio" name="feedback" value="excellent" /> Excellent
+          <legend>Leave us Feedback </legend>
+          <input type="radio" name="feedback" value="excellent" />😍Excellent
           <br>
-          <input type="radio" name="feedback" value="good" /> Good
+          <input type="radio" name="feedback" value="good" />😊 Good
           <br>
-          <input type="radio" name="feedback" value="average" /> Average
+          <input type="radio" name="feedback" value="average" />😒 Average
           <br>
-          <input type="radio" name="feedback" value="poor" /> Poor
+          <input type="radio" name="feedback" value="poor" />😡 Poor
         </fieldset>
 
         <!-- Additional Questions -->
         <fieldset>
           <legend>Do you have any additional questions or requests?</legend>
           <textarea
-            id="additional-comments"
+            id="textArea"
             cols="50"
             rows="4"
             placeholder="Add your thoughts here..."
+            required
           ></textarea>
+          <p>Word Count: <span id="wordCount">0</span></p>
         </fieldset>
         <fieldset>
-          <input type="checkbox" name="terms" value="agree" /> I agree to the
+          <input type="checkbox" name="terms" value="agree" required /> I agree to the
           terms and conditions
         </fieldset>
+        <fieldset>
+          <input type="file" id="fileinput" name="fileinput">
+        </fieldset>
+        <fieldset>
+          <legend>Feedback Submission</legend>
+          <input type="datetime-local" name="date" required>
+        </fieldset>
+        <script>
+          const textArea = document.getElementById("textArea");
+        const wordCount = document.getElementById("wordCount");
+
+        textArea.addEventListener("input", () => {
+            let words = textArea.value.trim().split(/\s+/).filter(word => word.length > 0);
+            wordCount.textContent = words.length;});
+         
+      </script>
 
         <!-- Submit Button -->
         <button type="submit" id="submit-btn">Send</button>
