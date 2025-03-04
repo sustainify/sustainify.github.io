@@ -19,6 +19,7 @@ header {
   align-items: center;
   padding: 10px 3%;
   background-color: #3c3c3c;
+  flex-wrap: wrap;
 }
 
 .navlinks {
