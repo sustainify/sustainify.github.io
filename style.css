@@ -7,8 +7,8 @@
   font-family: "Open Sans", serif;
 }
 
-li,
-a {
+header li,
+header a {
   color: #ffc107;
   text-decoration: none;
 }
@@ -22,7 +22,7 @@ header {
   flex-wrap: wrap;
 }
 
-.navlinks {
+header a .navlinks {
   list-style: none;
 }
 
