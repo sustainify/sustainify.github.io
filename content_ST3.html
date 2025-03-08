@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Planning</title>
+    <link rel="stylesheet" href="style.css">
     
     <style>
 * {
@@ -14,7 +15,7 @@
             font-family: 'Arial', sans-serif;
         }
 
-        body {
+        .wrapper {
             background-color: #f5f5f5;
             color: #333;
             line-height: 1.6;
@@ -35,11 +36,15 @@
         .container {
     display: flex;
     align-items: center; 
+    justify-content: center;
     gap: 20px; 
+    
+
 }
 
 .image {
     max-width: 500px;
+    margin-bottom: 80px;
     height: auto;
     border-radius: 10px; 
 }
@@ -49,6 +54,31 @@
     height: auto;
     border-radius: 10px; 
 }
+.imageP {
+    margin-right: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.imageS {
+    margin-left: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px; 
+}
+.imageT {
+    margin-right: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.imageU {
+    margin-left: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px; 
+}
+
 
         
 
@@ -96,23 +126,38 @@
             background: url('images/smart.jpg') no-repeat center center/cover;
         }
         #title{
-            background-color: yellow;
             border-radius: 25px;
-            color: black;
+            color: green;
         }
-        .left{
-            margin-left: 50px;
-        }
-        .right{
-            margin-left: 550px;
-        }
+        
     </style>
 </head>
-<body>
-<div>
+<header class="navigation-bar">
+    <div class="logo-container">
+      <a href="home.html"
+        ><img class="logo" src="images/logo.svg" alt="logo"
+      /></a>
+      <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
+    </div>
+    <nav>
+      <ul class="navlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="splash.html">Splash</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="profile.html">User Profile</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a class="active" href="team.html">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<div class="wrapper">
 <h1 class="parallax" id="backimg1"> Smart Planning</h1>
 
-<h2 id="title">Redefining Sri Lanka’s Future Through Smart Planning</h2>
+<h2 id="title">Redefining Sri Lanka’s Future Through Smart Planning 💢</h2>
 
 <br><br/>
 <div class="container">
@@ -128,11 +173,13 @@
 </ul>
 </p>
 </section>
-<img src="images/colombo.jpg" alt="Your Image" class="image">
+<img src="images/colombodrone.jpg" alt="Your Image" class="image">
+
 </div>
 <br><br/>
 
 <div class="container">
+<img src="images/portcity.jpg"alt="port city" class="imageR">
 <section class="right">
 <h2>Smart Driven Transportation</h2>
 <p>Port City Colombo</p>
@@ -145,20 +192,25 @@
 </ul>
 </p>
 </section>
-<img src="images/colombo.jpg"alt="port city" class="imageR">
+<img src="images/lotus.jpg" alt="lotusTower" class="imageP">
 </div>
 <br><br/>
 
 
 <h1 class="parallax" id="backimg2">Sri Lanka's Smart Planning Projetcs</h1>
 
-
+<div class="container">
+<img src="images/cleansrilanka.jpg" alt="cleansrilanka" class="imageS">
 <section class="left">
 <h2>Clean Sri Lanka Initiative</h2>
 <p>The Clean Sri Lanka Initiative is a comprehensive nationwide program launched by the Sri Lankan government to transform the country into a cleaner, greener, and more sustainable nation. Here are key aspects of the initiative:</p>
 <p>Launched on January 1, 2025, the Clean Sri Lanka initiative aims to tackle pressing environmental issues while promoting socio-economic growth. This initiative aligns with Smart City projects that utilize technology to enhance urban living, addressing challenges such as waste management and traffic congestion through sustainability pillars of governance, economy, environment, and society <a href="https://cleansrilanka.gov.lk/">See more</a>  </p>
 <br><br/>
 </section>
+</div>
+
+<div class="container">
+
 
 <section class="right">
 <h2>Smart Sri Lanka Initiative</h2>
@@ -173,7 +225,50 @@
     <p>Smart Metering and Network Monitoring: Lanka Electricity Company (LECO), in partnership with Dialog Axiata and the University of Moratuwa, has implemented a smart grid solution. This system collects data from 3,200 smart meters and 150 network monitoring devices to analyze electricity usage and detect grid faults. The smart meters also support prepaid electricity metering <a href="https://www.gsma.com/solutions-and-impact/technologies/internet-of-things/gsma_study/case-study-sri-lanka-takes-first-step-towards-smart-grid/">See more</a>  </p>
 </ul>
 </section>
+<img src="images/LGN.jpg" alt="LECO" class="imageU">
+</div>
+<footer>
+    <a href="#top" class="backtotop">Back to Top</a>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3 class="footerlogo">
+          <img class="logo" src="images/logo.png" alt="logo" />SUSTAINIFY
+        </h3>
+        <p>
+          SUSTAINIFY promotes sustainable urban development through
+          renewable energy, green infrastructure, and smart planning to
+          create cleaner, healthier, and more resilient communities.
+        </p>
+      </div>
 
+      <div class="footer-section links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="table.html">Initiatives</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section editors">
+        <h4>Editors</h4>
+        <ul>
+          <li><a href="#">Thinura</a></li>
+          <li><a href="#">Chameen</a></li>
+          <li><a href="#">Akila</a></li>
+          <li><a href="#">Chathila</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 
 </div>

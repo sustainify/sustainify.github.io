@@ -57,6 +57,7 @@ select {
     margin-top: 8px;
     border: 2px solid #FFD700;
     border-radius: 8px;
+    box-sizing: border-box;
     outline: none;
     transition: 0.3s;
 }
@@ -83,6 +84,7 @@ legend {
 
 /* Radio Buttons */
 label {
+    display: block;
     font-size: 16px;
     color: #444;
     margin-right: 15px;
@@ -121,28 +123,29 @@ button:hover {
     box-shadow: 0px 5px 15px rgba(255, 140, 0, 0.4);
     transform: scale(1.05);
 }
-.error-message {
-    font-size: 12px;
-    color: red;
-    margin-top: 3px;
-    display: none; /* Hidden initially */
+input:invalid, select:invalid {
+      border: 2px solid #ff4136;
+      background-color: #fff0f0;
+}
+.required::after {
+      content: " *";
+      color: #ff4136;
+}
+.error{
+  color:red;
+  font-size:0.85em;
+  margin-bottom:5px;
+  display: none;
+  
+}
+input:invalid +.error{
+  display: block;
+}
+input:valid + .error{
+  display: none;
 }
 
-/* Show error messages only when the field is invalid */
-input:invalid + .error-message {
-    display: block;
-}
 
-/* Highlight invalid fields with a red border */
-input:invalid {
-    border: 2px solid red;
-    background-color: #ffe6e6;
-}
-
-/* Highlight valid fields with a green border */
-input:valid {
-    border: 2px solid green;
-}
 
 /* Animation */
 @keyframes fadeIn {
@@ -200,9 +203,9 @@ input:valid {
             placeholder="Your Name"
             required title="Enter your name"
           />
+        <div class="error">This field is required.</div>
         </div>
-        <div class="error-message">This field is required.</div>
-
+        
         <!-- Email Input -->
         <div class="input-group">
           <label for="email">Enter your Email:</label>
@@ -211,9 +214,11 @@ input:valid {
             id="email"
             name="Email"
             placeholder="Enter your Email"
-            required title="Enter a valid Email Address"
+            required  
           />
-        </div class="input-group">
+        <div class="error">Please enter a valid E-mail Address</div>
+        </div>
+        <div class="input-group">
           <label for="number">Enter your mobile number:</label>
           <input
             type="tel"
@@ -223,7 +228,8 @@ input:valid {
             pattern="[0-9]{10}"
             required title="Enter 10 digits mobile number"
           />
-       
+        <div class="error">Please enter a valid Mobile number.</div>
+        </div>
 
         <!-- First-time Visit -->
         <fieldset>
@@ -271,7 +277,7 @@ input:valid {
         </fieldset>
         <fieldset>
           <legend>Leave us Feedback </legend>
-          <input type="radio" name="feedback" value="excellent" />😍Excellent
+          <input type="radio" name="feedback" value="excellent" aria-hidden="true" />😍Excellent
           <br>
           <input type="radio" name="feedback" value="good" />😊 Good
           <br>
@@ -288,20 +294,21 @@ input:valid {
             cols="50"
             rows="4"
             placeholder="Add your thoughts here..."
-            required
+           
           ></textarea>
           <p>Word Count: <span id="wordCount">0</span></p>
         </fieldset>
         <fieldset>
-          <input type="checkbox" name="terms" value="agree" required /> I agree to the
-          terms and conditions
-        </fieldset>
-        <fieldset>
+          <legend>Add Images/Donument/videos:</legend>
           <input type="file" id="fileinput" name="fileinput">
         </fieldset>
         <fieldset>
           <legend>Feedback Submission</legend>
-          <input type="datetime-local" name="date" required>
+          <input type="datetime-local" name="date" value="2025-03-10" required >
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" name="terms" value="agree" required /> I agree to the
+          terms and conditions
         </fieldset>
         <script>
           const textArea = document.getElementById("textArea");
