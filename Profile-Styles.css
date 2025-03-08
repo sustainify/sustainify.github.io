@@ -11,26 +11,26 @@
   background-color: white;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   gap: 20px;
 }
 
 .profile-box {
-  margin-right: 750px;
-  width: 350px;
-  height: 605px;
+  margin-right: 0px;
+  width: 1100px;
+  height: 340px;
   display: flex;
   background: #ffd8ca;
   border-radius: 15px;
   justify-content: center;
   padding-top: 25px;
   padding-bottom: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  clip-path: polygon(0 0, 0% 0%, 28.6% 0%, 56.3% 100%, 0% 100%);
+  transition: transform 0.3s;
 }
 
 .profile-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 .profile-card {
@@ -38,11 +38,13 @@
 }
 
 .profile-picture-container{
-  width: 240px;
-  height: 240px;
+  width: 270px;
+  height: 270px;
+  margin-left: -30px;
   border-radius: 50%;
   background-color: white;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .profile-card img {
@@ -51,38 +53,81 @@
   border-radius: 50%;
 }
 
-.profile-card h1 {
-  color: black;
-  margin-bottom: 20px;
-}
-
 .achievements {
-  width: 250px;
-  height: 80px;
-  padding-top: 7px;
-  padding-bottom: 5px;
+  margin-right: 700px ;
+  margin-bottom: 10px;
+}
+.achievements strong{
+  color: black;
+}
+
+.profile-info-box{
+  height: 376px;
+  width: 800px;
   border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  background-color: aqua;
+  margin-top: -395px;
+  margin-left: 300px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%, 0% -5%);
+  transition: transform 0.3s;
 }
 
-.achievements:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 0px 13px 10px rgba(252, 252, 251, 0.3);
+.profile-info-box:hover {
+  transform: translateY(5px);
 }
 
-.basic-info {
-  margin-top: -5px;
+.inclined-line {
+  margin-left: -470px;
+  width: 980px; /* Length of the line */
+  height: 5px; /* Thickness of the line */
+  background-color: red; /* Line color */
+  transform: rotate(51deg); /* Adjust angle as needed */
 }
 
-.basic-info-item {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.profile-info-box h1 {
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-left: 150px;
 }
+
+.basic-info strong{
+  color: black;
+}
+
+.basic-info p{
+  color: rgb(123, 118, 118);
+}
+
+.basic-info-item1 {
+  margin-left: 280px;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.basic-info-item2 {
+  margin-left: 320px;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.basic-info-item3 {
+  margin-left: 370px;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.basic-info-item4 {
+  margin-left: 410px;
+  padding: 12px;
+  font-size: 25px;
+}
+
 
 .skill-box {
-  margin-right: 750px;
-  width: 350px;
-  height: 275px;
+  width: 1100px;
+  height: 290px;
   display: flex;
   background: #ffd8ca;
   border-radius: 15px;
@@ -95,12 +140,25 @@
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
 
+.skill-box-topic{
+  height: 70px;
+  width: 100px;
+  margin-left: 400px;
+}
+
+.skill-box-topic h2 {
+  color: black;
+  font-size: 40px;
+}
+
 .skill-section {
-  margin: 20px;
+  margin-top: 65px;
+  margin-left: -470px;
 }
 
 .skill-poll {
   height: 6px;
+  width: 900px;
   background: #fff1ea;
   border-radius: 5px;
   overflow: hidden;
@@ -119,16 +177,14 @@
   color: rgb(123, 118, 118);
 }
 
-.skill-section h2 {
-  margin-left: 10px;
-  color: black;
+.skills label{
+  font-size: 20px;
 }
 
 .bio-box {
-  width: 700px;
+  width: 1100px;
   height: 227px;
-  margin-top: -919px;
-  margin-left: 350px;
+  margin-top: 0;
   background: #ffd8ca;
   border-radius: 15px;
   justify-content: center;
@@ -145,7 +201,7 @@
   color: black;
   font-size: 30px;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 520px;
   margin-bottom: 5px;
 }
 
@@ -157,18 +213,16 @@
 
 .bio-box p {
   color: rgb(123, 118, 118);
-  max-width: 650px;
-  margin-top: 10px;
-  margin-left: 20px;
+  max-width: 1050px;
+  padding: 30px;
   display: inline-block;
 }
 
 .goals-box {
-  width: 700px;
-  height: 200px;
+  width: 1080px;
+  height: 250px;
   background-color: #ffd8ca;
   border-radius: 15px;
-  margin-left: 350px;
   padding: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -198,10 +252,10 @@
 
 .goals-box h4 {
   color: black;
-  font-size: 30px;
+  font-size: 35px;
   margin-left: 85px;
-  margin-top: -50px;
-  margin-bottom: 10px;
+  margin-top: -62px;
+  margin-bottom: 15px;
 }
 
 .goals-box hr {
@@ -214,32 +268,39 @@
 }
 
 .goals-list {
-  margin-left: 30px;
-  margin-top: -10px;
+  margin-left: 0px;
+  margin-top: 0px;
   display: flex;
-  gap: 40px;
+  gap:120px;
   max-width: 600px;
 }
 
 .column {
   list-style: none;
   flex: 1;
-  min-width: 200px;
+  min-width: 360px;
   word-break: break-word;
 }
 
 .column li {
   margin: 30px 0px;
   color: black;
-  font-size: 16px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.column p{
+  display: inline-block;
+  color: rgb(123, 118, 118);
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .fustrations-box {
-  width: 700px;
+  width: 1080px;
   height: 200px;
   background-color: #ffd8ca;
   border-radius: 15px;
-  margin-left: 350px;
   padding: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -271,8 +332,8 @@
   color: black;
   font-size: 30px;
   margin-left: 85px;
-  margin-top: -50px;
-  margin-bottom: 10px;
+  margin-top: -55px;
+  margin-bottom: 15px;
 }
 
 .fustrations-box hr {
@@ -302,43 +363,62 @@
 .column1 li {
   margin: 30px 0px;
   color: rgb(123, 118, 118);
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.alliance-box {
-  width: 700px;
+.UN-goals-box {
+  width: 1080px;
   height: 210px;
   background-color: #ffd8ca;
   border-radius: 15px;
-  margin-left: 350px;
   padding: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.alliance-box:hover {
+.UN-goals-box:hover {
   transform: translateY(-5px);
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-.alliance-box h6 {
-  color: black;
-  font-size: 30px;
-  margin-left: 10px;
+.UN-goals-icon {
+  background-color: #bf0309;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.alliance-box hr {
-  margin: 10px;
-  margin-left: -20px;
-  margin-right: -20px;
+.UN-goals-icon img {
+  width: 82%;
+  height: 82%;
+  border-radius: 50%;
+}
+
+.UN-goals-box h6 {
+  color: black;
+  font-size: 30px;
+  margin-left: 85px;
+  margin-top: -55px;
+  margin-bottom: 15px;
+}
+
+.UN-goals-box hr {
+  margin-left: 33px;
+  margin-top: -11.65px;
+  margin-right: -10px;
   border: none;
-  height: 3px;
+  height: 6px;
   background-color: #bf0309;
 }
 
 .alliance {
   display: flex;
-  gap: 172px;
+  padding: 15px;
+  gap: 20px;
 }
 
 .alliance img {
@@ -356,21 +436,10 @@
   box-shadow: 0px 0px 40px 15px rgba(252, 252, 252, 0.3);
 }
 
-.alliance-name {
-  display: flex;
-  gap: 130px;
-}
-
-.alliance-name p {
-  color: rgb(123, 118, 118);
-  font-size: 20px;
-  margin-top: 10px;
-  margin-left: 70px;
-}
 
 .contact-box{
   width: 350px;
-  height: 300px;
+  height: 320px;
   border-radius: 10px;
   background-color: white;
   align-items: center;
@@ -382,7 +451,7 @@
 
 .contact-box table {
   width: 350px;
-  height: 300px;
+  height: 320px;
   border-collapse: separate;
   border-spacing: 0px;
   border: 1px solid #bf0309;
@@ -420,8 +489,8 @@ td {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-left: 350px;
-  margin-top: -320px;
+  margin-left: 370px;
+  margin-top: -330px;
   background-color: white;
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
