@@ -504,7 +504,7 @@
   display: flex;
 }
 
-.calendar h7{
+.month-year{
   font-size: 40px;
   font-weight: 500;
   margin-left: 400px;
