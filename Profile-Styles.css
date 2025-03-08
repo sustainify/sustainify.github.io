@@ -1,6 +1,6 @@
 .wrapper {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,9 +18,10 @@
 .profile-box {
   margin-right: 0px;
   width: 1100px;
-  height: 340px;
+  height: 440px;
   display: flex;
   background: #ffd8ca;
+  background-image: url(images/profile-image-box.jpg);
   border-radius: 15px;
   justify-content: center;
   padding-top: 25px;
@@ -38,18 +39,18 @@
 }
 
 .profile-picture-container{
-  width: 270px;
-  height: 270px;
-  margin-left: -30px;
+  width: 350px;
+  height: 350px;
+  margin-left: -50px;
   border-radius: 50%;
   background-color: white;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .profile-card img {
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
 }
 
@@ -58,16 +59,16 @@
   margin-bottom: 10px;
 }
 .achievements strong{
-  color: black;
+  color: white;
 }
 
 .profile-info-box{
-  height: 376px;
+  height: 476px;
   width: 800px;
   border-radius: 15px;
-  background-color: aqua;
-  margin-top: -395px;
-  margin-left: 300px;
+  background-color: #1d1b1b;
+  margin-top: -495px;
+  margin-left: 298px;
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%, 0% -5%);
   transition: transform 0.3s;
@@ -78,26 +79,26 @@
 }
 
 .inclined-line {
-  margin-left: -470px;
-  width: 980px; /* Length of the line */
+  margin-left: -630px;
+  width: 1300px; /* Length of the line */
   height: 5px; /* Thickness of the line */
   background-color: red; /* Line color */
-  transform: rotate(51deg); /* Adjust angle as needed */
+  transform: rotate(57.4deg); /* Adjust angle as needed */
 }
 
 .profile-info-box h1 {
-  color: black;
+  color: #ffc107;
   padding-top: 40px;
   padding-bottom: 20px;
   margin-left: 150px;
 }
 
 .basic-info strong{
-  color: black;
+  color: #ffc107;
 }
 
 .basic-info p{
-  color: rgb(123, 118, 118);
+  color: rgb(137, 133, 133);
 }
 
 .basic-info-item1 {
@@ -124,12 +125,19 @@
   font-size: 25px;
 }
 
+.decorative img{
+  width: 800px;
+  height: 330px;
+  margin-left: 250px;
+  margin-top: -155px;  
+}
+
 
 .skill-box {
   width: 1100px;
   height: 290px;
   display: flex;
-  background: #ffd8ca;
+  background: #fbd35b;
   border-radius: 15px;
   justify-content: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -149,24 +157,25 @@
 .skill-box-topic h2 {
   color: black;
   font-size: 40px;
+  margin-top: 10px;
 }
 
 .skill-section {
-  margin-top: 65px;
+  margin-top: 50px;
   margin-left: -470px;
 }
 
 .skill-poll {
   height: 6px;
   width: 900px;
-  background: #fff1ea;
+  background: rgb(184, 179, 179);
   border-radius: 5px;
   overflow: hidden;
 }
 
 .skill-poll-fill {
   height: 100%;
-  background: #bf0309;
+  background: black;
 }
 
 .skills {
@@ -185,7 +194,7 @@
   width: 1100px;
   height: 227px;
   margin-top: 0;
-  background: #ffd8ca;
+  background: #fbcf4c;
   border-radius: 15px;
   justify-content: center;
   overflow: hidden;
@@ -199,7 +208,7 @@
 
 .bio-box h3 {
   color: black;
-  font-size: 30px;
+  font-size: 45px;
   margin-top: 10px;
   margin-left: 520px;
   margin-bottom: 5px;
@@ -207,8 +216,8 @@
 
 .bio-box hr {
   border: none;
-  height: 3px;
-  background-color: #bf0309;
+  height: 5px;
+  background-color: black;
 }
 
 .bio-box p {
@@ -221,7 +230,7 @@
 .goals-box {
   width: 1080px;
   height: 250px;
-  background-color: #ffd8ca;
+  background-color: #fccc3d;
   border-radius: 15px;
   padding: 10px;
   overflow: hidden;
@@ -234,7 +243,7 @@
 }
 
 .goals-icon {
-  background-color: #bf0309;
+  background-color: black;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -264,14 +273,14 @@
   margin-right: -10px;
   border: none;
   height: 6px;
-  background-color: #bf0309;
+  background-color: black;
 }
 
 .goals-list {
-  margin-left: 0px;
+  margin-left: 20px;
   margin-top: 0px;
   display: flex;
-  gap:120px;
+  gap:100px;
   max-width: 600px;
 }
 
@@ -299,7 +308,7 @@
 .fustrations-box {
   width: 1080px;
   height: 200px;
-  background-color: #ffd8ca;
+  background-color: #fcc728;
   border-radius: 15px;
   padding: 10px;
   overflow: hidden;
@@ -312,7 +321,7 @@
 }
 
 .fustrations-icon {
-  background-color: #bf0309;
+  background-color: black;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -342,7 +351,7 @@
   margin-right: -10px;
   border: none;
   height: 6px;
-  background-color: #bf0309;
+  background-color: black;
 }
 
 .fustrations-list {
@@ -369,10 +378,9 @@
 .UN-goals-box {
   width: 1080px;
   height: 210px;
-  background-color: #ffd8ca;
+  background-color: #fbc219;
   border-radius: 15px;
   padding: 10px;
-  overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -382,7 +390,7 @@
 }
 
 .UN-goals-icon {
-  background-color: #bf0309;
+  background-color: black;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -412,29 +420,135 @@
   margin-right: -10px;
   border: none;
   height: 6px;
-  background-color: #bf0309;
+  background-color: black;
 }
 
-.alliance {
+.UN-goals-list{
+  margin-top: 15px;
+  list-style: none; /*Removes default bullets */
+  display: flex; /* Align items in a row */
+  gap: 125px; 
+  padding: 0; /* Removes defalt padding */
+  justify-content: center; /* Centers items horizontally */
+}
+
+.goal{
   display: flex;
-  padding: 15px;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.alliance img {
-  width: 80px;
-  height: 80px;
+.UN-goals-image-container {
+  width: 100px;
+  height: 100px;
   border-radius: 15px;
   background-color: azure;
+  border: 3px solid black;
   margin-top: 10px;
-  margin-left: 120px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.UN-goals-image-container:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.UN-goals-image-container img{
+  width: 100px;
+  height: 100px;
+  border-radius: 13px;
+}
+
+.hover-description {
+  position: absolute;
+  top: 90%; /* Position below the card */
+  width: 200px;
+  margin-left: -60px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  color: white;
+  padding: 5px;
+  border-radius: 10px 10px 10px 10px; /* Rounded corners at the bottom */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevents the text box from interfering with hover */
+  text-align: justify;
+}
+
+.UN-goals-image-container:hover .hover-description {
+  opacity: 1; /* Make it visible */
+}
+
+
+.calendar-box{
+  width: 1050px;
+  height: 600px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #fcc10e;
+  justify-content: center;
+  display: flex;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.alliance img:hover {
+.calendar-box:hover{
   transform: translateY(-5px);
-  box-shadow: 0px 0px 40px 15px rgba(252, 252, 252, 0.3);
+  box-shadow: 0px 0px 40px 15px rgba(76, 71, 71, 0.3);
 }
+
+.calendar{
+  width: 1000px;
+  height: 550px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+  justify-content: center;
+  display: flex;
+}
+
+.calendar h7{
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 400px;
+
+}
+
+.calendar table {
+  margin-left: -620px;
+  margin-top: 50px;
+  width: 1000px;
+  height: 480px;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 15px;
+}
+
+.calendar th {
+  height: 30px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.calendar td {
+  height: 50px;
+}
+
+.empty {
+  background-color: #eee;
+}
+
+.calendar td p{
+  margin-right: -70px;
+}
+
+.sheduled{
+  background-color: #fccc3d;
+}
+
 
 
 .contact-box{
@@ -454,7 +568,7 @@
   height: 320px;
   border-collapse: separate;
   border-spacing: 0px;
-  border: 1px solid #bf0309;
+  border: 1px solid #fbc219;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -466,13 +580,13 @@
 
 .contact-box th,
 td {
-  border: 1px solid #bf0309;
+  border: 1px solid #fbc219;
   padding: 5px;
   text-align: left;
 }
 
 #table-topic th {
-  background-color: #ffeee8;
+  background-color: #f7e9c0;
   font-weight: bold;
   padding: 20px;
 }
@@ -502,8 +616,8 @@ td {
   width: 700px;
   height: 305px;
   border-radius: 15px;
-  background-color: #ffd8ca;
-  border-color: #ffd8ca;
+  background-color: #ffc30d;
+  border-color: #ffc30d;
 }
 
 
@@ -547,6 +661,6 @@ td {
   width: 70px;
   height: 30px;
   margin-left: 20px;
-  background-color: #bf0309;
-  color: #ffd8ca;
+  background-color: #1d1b1b;
+  color: #ffc30d;
 }
