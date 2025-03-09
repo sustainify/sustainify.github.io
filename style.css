@@ -4,6 +4,9 @@
   margin: 0;
   font-family: "Open Sans", serif;
 }
+body {
+   background-color: #FFF8F0;
+ }
 
 header li,
 header a {
@@ -19,6 +22,7 @@ header {
   background-color: #3c3c3c;
   flex-wrap: wrap;
 }
+
 
 header a .navlinks {
   list-style: none;
