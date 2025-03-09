@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -189,7 +189,7 @@ input:valid + .error{
     </video>
 
     <div class="container">
-      <form id="feedback-form">
+     
         <h1>Give Your Feedback</h1>
 
         <!-- Name Input -->
@@ -202,22 +202,10 @@ input:valid + .error{
             name="FullName"
             placeholder="Your Name"
             required title="Enter your name"
-          />
+          >
         <div class="error">This field is required.</div>
         </div>
         
-        <!-- Email Input -->
-        <div class="input-group">
-          <label for="email">Enter your Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="Email"
-            placeholder="Enter your Email"
-            required  
-          />
-        <div class="error">Please enter a valid E-mail Address</div>
-        </div>
         <div class="input-group">
           <label for="number">Enter your mobile number:</label>
           <input
@@ -227,18 +215,30 @@ input:valid + .error{
             placeholder="Enter your mobile number"
             pattern="[0-9]{10}"
             required title="Enter 10 digits mobile number"
-          />
+          >
         <div class="error">Please enter a valid Mobile number.</div>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Enter your Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your E-mail"
+            required title="Enter a valid E-mail address"
+          >
+        <div class="error">Please enter a valid Email address.</div>
         </div>
 
         <!-- First-time Visit -->
         <fieldset>
           <legend>Was this your first time visiting?</legend>
           <label>
-            <input type="radio" name="first-visit" value="yes" /> Yes</label
+            <input type="radio" name="first-visit" value="yes" checked > Yes</label
           >
           <label>
-            <input type="radio" name="first-visit" value="no" /> No</label
+            <input type="radio" name="first-visit" value="no" > No</label
           >
         </fieldset>
 
@@ -246,21 +246,22 @@ input:valid + .error{
         <fieldset>
           <legend>Was this website informative and easy to navigate?</legend>
           <label>
-            <input type="radio" name="navigation" value="yes" /> Yes</label
+            <input type="radio" name="navigation" value="yes" checked > Yes</label
           >
-          <label> <input type="radio" name="navigation" value="no" /> No</label>
+          <label> <input type="radio" name="navigation" value="no" > No</label>
         </fieldset>
 
         <!-- Improvement Suggestions -->
         <fieldset>
           <legend>If "No", suggest any improvements for the future:</legend>
           <textarea
-            id="textArea"
+            id="textArea1"
             cols="50"
             rows="4"
             placeholder="Enter your opinions here..."
+            maxlength="500"
           ></textarea>
-          <p>Word Count: <span id="wordCount">0</span></p>
+          <p>Word Count: <span id="wordCount1">0</span></p>
         </fieldset>
 
         <!-- Subscription Preferences -->
@@ -277,26 +278,27 @@ input:valid + .error{
         </fieldset>
         <fieldset>
           <legend>Leave us Feedback </legend>
-          <input type="radio" name="feedback" value="excellent" aria-hidden="true" />😍Excellent
+          <input type="radio" name="feedback" value="excellent" >😍Excellent
           <br>
-          <input type="radio" name="feedback" value="good" />😊 Good
+          <input type="radio" name="feedback" value="good" >😊 Good
           <br>
-          <input type="radio" name="feedback" value="average" />😒 Average
+          <input type="radio" name="feedback" value="average" >😒 Average
           <br>
-          <input type="radio" name="feedback" value="poor" />😡 Poor
+          <input type="radio" name="feedback" value="poor" >😡 Poor
         </fieldset>
 
         <!-- Additional Questions -->
         <fieldset>
           <legend>Do you have any additional questions or requests?</legend>
           <textarea
-            id="textArea"
+            id="textArea2"
             cols="50"
             rows="4"
             placeholder="Add your thoughts here..."
+            maxlength="500"
            
           ></textarea>
-          <p>Word Count: <span id="wordCount">0</span></p>
+          <p>Word Count: <span id="wordCount2">0</span></p>
         </fieldset>
         <fieldset>
           <legend>Add Images/Donument/videos:</legend>
@@ -311,12 +313,18 @@ input:valid + .error{
           terms and conditions
         </fieldset>
         <script>
-          const textArea = document.getElementById("textArea");
-        const wordCount = document.getElementById("wordCount");
+          function updateWordCount(textAreaId, wordCountId) {
+        const textArea = document.getElementById(textAreaId);
+        const wordCount = document.getElementById(wordCountId);
 
         textArea.addEventListener("input", () => {
             let words = textArea.value.trim().split(/\s+/).filter(word => word.length > 0);
-            wordCount.textContent = words.length;});
+            wordCount.textContent = words.length;
+        });
+    }
+
+    updateWordCount("textArea1", "wordCount1");
+    updateWordCount("textArea2", "wordCount2");
          
       </script>
 
@@ -324,7 +332,9 @@ input:valid + .error{
         <button type="submit" id="submit-btn">Send</button>
         <button type="reset" id="reset-btn">Reset</button>
       </form>
+  </div>
     </div>
+  
   </form>
   </div>
   <footer>
