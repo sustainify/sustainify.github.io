@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
     <style>
+      .wrapper {
+        width: 80%; /* Adjust for desired content width */
+        max-width: 1200px; /* Prevents content from stretching too wide */
+        margin: 0 auto; /* Centers the content horizontally */
+        padding: 20px; /* Adds spacing */
+      }
+
       /* Hero Section */
       .hero {
         background: url("images/hero-bg.jpg") no-repeat center center/cover;
@@ -28,7 +35,6 @@
       .mission {
         padding: 40px 20px;
         text-align: center;
-        background-color: #ffffff;
       }
 
       .mission h2 {
@@ -118,57 +124,60 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Welcome to Sustainify</h1>
-          <p>Empowering Sustainable Urban Development</p>
-        </div>
-      </section>
+      <div class="wrapper">
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Welcome to Sustainify</h1>
+            <p>Empowering Sustainable Urban Development</p>
+          </div>
+        </section>
 
-      <section class="mission">
-        <h2>Our Mission</h2>
-        <p>
-          Sustainify is committed to supporting the United Nations Sustainable
-          Development Goal (SDG) 11:
-          <strong>Sustainable Cities and Communities</strong>. We aim to promote
-          renewable energy, green infrastructure, and smart urban planning to
-          create cleaner, healthier, and more resilient communities.
-        </p>
-      </section>
+        <section class="mission">
+          <h2>Our Mission</h2>
+          <p>
+            Sustainify is committed to supporting the United Nations Sustainable
+            Development Goal (SDG) 11:
+            <strong>Sustainable Cities and Communities</strong>. We aim to
+            promote renewable energy, green infrastructure, and smart urban
+            planning to create cleaner, healthier, and more resilient
+            communities.
+          </p>
+        </section>
 
-      <section class="content-links">
-        <h2>Explore Our Content</h2>
-        <div class="card-container">
-          <a href="content_ST4.html" class="card">
-            <img src="images/content1.jpg" alt="Renewable Energy" />
-            <div class="card-content">
-              <h3>Renewable Energy</h3>
-              <p>Learn about sustainable energy solutions for urban areas.</p>
-            </div>
-          </a>
-          <a href="content_ST2.html" class="card">
-            <img src="images/content2.jpg" alt="Green Infrastructure" />
-            <div class="card-content">
-              <h3>Green Infrastructure</h3>
-              <p>Discover how green spaces can transform cities.</p>
-            </div>
-          </a>
-          <a href="content_ST3.html" class="card">
-            <img src="images/content3.jpg" alt="Smart Planning" />
-            <div class="card-content">
-              <h3>Smart Planning</h3>
-              <p>Explore innovative urban planning strategies.</p>
-            </div>
-          </a>
-          <a href="content_ST1.html" class="card">
-            <img src="images/content4.jpg" alt="Community Resilience" />
-            <div class="card-content">
-              <h3>Community Resilience</h3>
-              <p>Find out how communities can adapt to climate change.</p>
-            </div>
-          </a>
-        </div>
-      </section>
+        <section class="content-links">
+          <h2>Explore Our Content</h2>
+          <div class="card-container">
+            <a href="content_ST4.html" class="card">
+              <img src="images/content1.jpg" alt="Renewable Energy" />
+              <div class="card-content">
+                <h3>Renewable Energy</h3>
+                <p>Learn about sustainable energy solutions for urban areas.</p>
+              </div>
+            </a>
+            <a href="content_ST2.html" class="card">
+              <img src="images/content2.jpg" alt="Green Infrastructure" />
+              <div class="card-content">
+                <h3>Green Infrastructure</h3>
+                <p>Discover how green spaces can transform cities.</p>
+              </div>
+            </a>
+            <a href="content_ST3.html" class="card">
+              <img src="images/content3.jpg" alt="Smart Planning" />
+              <div class="card-content">
+                <h3>Smart Planning</h3>
+                <p>Explore innovative urban planning strategies.</p>
+              </div>
+            </a>
+            <a href="content_ST1.html" class="card">
+              <img src="images/content4.jpg" alt="Community Resilience" />
+              <div class="card-content">
+                <h3>Community Resilience</h3>
+                <p>Find out how communities can adapt to climate change.</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <a href="#top" class="backtotop">Back to Top</a>
@@ -202,7 +211,7 @@
           <ul>
             <li><a href="#">Thinura</a></li>
             <li><a href="pageEditor_ST2.html">Chameen</a></li>
-            <li><a href="pageEditor _ST3.html">Akila</a></li>
+            <li><a href="pageEditor_ST3.html">Akila</a></li>
             <li><a href="#">Chathila</a></li>
           </ul>
         </div>
