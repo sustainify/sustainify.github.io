@@ -18,20 +18,50 @@
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
-        font-size: 18px;
+        font-size: 16px; /* Adjusted for better readability */
         text-align: left;
       }
 
-      th,
+      /* Heading font size */
+      th {
+        font-size: 18px; /* Slightly larger for better emphasis */
+        border: 3px solid #ddd;
+        padding: 12px;
+        background-color: #ffd700;
+        color: white;
+      }
+
+      /* Table cell font size */
       td {
+        font-size: 16px;
         border: 3px solid #ddd;
         padding: 12px;
       }
 
-      th {
-        background-color: #ffd700; /* Yellow color */
-        color: white;
-        text-transform: uppercase;
+      @media (max-width: 768px) {
+        /* Hide columns on mobile */
+        table th:nth-child(3),  /* Hide the third column header (Focus) */
+        table td:nth-child(3),  /* Hide the third column data (Focus) */
+        table th:nth-child(4),  /* Hide the fourth column header (Impact) */
+        table td:nth-child(4)   /* Hide the fourth column data (Impact) */ {
+          display: none;
+        }
+
+        /* Adjust the table so it looks cleaner */
+        table {
+          font-size: 14px;
+        }
+
+        /* Optional: Adjust the table padding on mobile */
+        th,
+        td {
+          padding: 8px;
+        }
+
+        /* Make sure the remaining table is fully scrollable */
+        .table-container {
+          overflow-x: auto;
+        }
       }
 
       tr:nth-child(even) {
@@ -41,17 +71,6 @@
       tr:hover {
         background-color: #ffee8c; /* Pale yellow hover effect */
         transition: background-color 0.3s ease;
-      }
-
-      /* Responsive table styling */
-      @media (max-width: 768px) {
-        table {
-          font-size: 16px;
-        }
-        th,
-        td {
-          padding: 8px;
-        }
       }
     </style>
   </head>
@@ -86,34 +105,58 @@
 
         <table>
           <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th>City</th>
+            <th>Sustainable Initiative</th>
+            <th>Focus</th>
+            <th>Impact</th>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Copenhagen</td>
+            <td>Denmark Carbon-neutral by 2025</td>
+            <td>Renewable Energy</td>
+            <td>75% of energy from wind</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Singapore</td>
+            <td>Smart Urban Planning</td>
+            <td>Green Infrastructure</td>
+            <td>47% green coverage</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Amsterdam, Netherlands</td>
+            <td>Circular Economy</td>
+            <td>Waste Management</td>
+            <td>68% waste recycled</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Oslo, Norway</td>
+            <td>Electric Public Transport</td>
+            <td>Clean Transport</td>
+            <td>95% of public transport is electric</td>
+          </tr>
+          <tr>
+            <td>Curitiba, Brazil</td>
+            <td>BRT (Bus Rapid Transit) System</td>
+            <td>Public Transport</td>
+            <td>Reduced emissions by 30%</td>
+          </tr>
+          <tr>
+            <td>San Francisco, USA</td>
+            <td>Zero Waste Goal</td>
+            <td>Waste Management</td>
+            <td>Diverts 80% of waste from landfills</td>
+          </tr>
+          <tr>
+            <td>Stockholm, Sweden</td>
+            <td>Green Roofs Policy</td>
+            <td>Urban Greenery</td>
+            <td>40% decrease in stormwater runoff</td>
+          </tr>
+          <tr>
+            <td>Tokyo, Japan</td>
+            <td>Solar Panel Incentives</td>
+            <td>Renewable Energy</td>
+            <td>20% solar-powered homes</td>
           </tr>
         </table>
       </main>
@@ -121,9 +164,7 @@
     <p class="top">
       <a href="#top">Go to top</a>
     </p>
-  </main>
     <footer>
-      <a href="#top" class="backtotop">Back to Top</a>
       <div class="footer-container">
         <div class="footer-section about">
           <h3 class="footerlogo">
