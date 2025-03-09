@@ -16,20 +16,23 @@ svg{
     pointer-events: none;
 }
 
-.node:focus{
-    outline: 2px solid #171717;
-    width: 100%;
-    height: 100%;
-    border-radius: 15.5px;
-}
-
-.node rect:hover,
-.node.active rect {
+.node:focus-within rect{
     fill: #3c3c3c;
 }
 
-.node:hover text,
-.node.active text{
+.node a:focus {
+    outline: none;
+}
+
+.node a:focus-within text{
+    fill: gold;
+}
+
+.node rect:hover{
+    fill: #3c3c3c;
+}
+
+.node:hover text{
     fill: gold;
 }
 

@@ -74,7 +74,7 @@
         pointer-events: none; 
         text-align: justify;
       }
-      .card:hover .hover-text {
+      .card:hover .hover-text,.card:focus-within .hover-text {
         opacity: 1; 
       }
 
@@ -117,7 +117,7 @@
       <div class="logo-container">
         <a href="home.html"
           ><img class="logo" src="images/logo.svg" alt="logo"
-        /></a>
+        ></a>
         <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
       </div>
       <nav>
@@ -143,8 +143,8 @@
         <div class="row">
           <div class="column">
             <div class="card">
-              <div class="img-container">
-                <img src="images/chameen.png" alt="Profile Image" >
+              <div class="img-container" tabindex="0" aria-expanded="hover-text" aria-controls="hover-text">
+                <img src="images/chameen.png" alt="Chameen Profile Image" >
               </div>
               <h3>Chameen Amanjana</h3>
               <p>Hello, I'm Chameen</p>
@@ -163,8 +163,8 @@
 
           <div class="column">
             <div class="card">
-              <div class="img-container">
-                <img src="images/akila.png" alt="Profile Image" >
+              <div class="img-container" tabindex="0">
+                <img src="images/akila.png" alt="Akila Profile Image" >
               </div>
               <h3>Akila Wijerama</h3>
               <p>Hello, I'm Akila</p>
@@ -189,8 +189,8 @@
 
           <div class="column">
             <div class="card">
-              <div class="img-container">
-                <img src="images/chatila.png" alt="Profile Image">
+              <div class="img-container" tabindex="0">
+                <img src="images/chatila.png" alt="Chathila Profile Image">
               </div>
               <h3>Chathila Wijesinghe</h3>
               <p>Hello, I'm Chathila</p>
@@ -212,8 +212,8 @@
 
           <div class="column">
             <div class="card">
-              <div class="img-container">
-                <img src="images/thinura.png" alt="Profile Image">
+              <div class="img-container" tabindex="0">
+                <img src="images/thinura.png" alt="Thinura Profile Image">
               </div>
               <h3>Thinura Uthsara</h3>
               <p>Hello, I'm Thinura</p>
@@ -271,7 +271,7 @@
             <ul>
               <li><a href="#">Thinura</a></li>
               <li><a href="#">Chameen</a></li>
-              <li><a href="#">Akila</a></li>
+              <li><a href="pageEditor_ST3.html">Akila</a></li>
               <li><a href="#">Chathila</a></li>
             </ul>
           </div>
