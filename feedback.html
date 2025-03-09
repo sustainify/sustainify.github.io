@@ -165,7 +165,7 @@ input:valid + .error{
   <body>
     <header class="navigation-bar">
       <div class="logo-container">
-        <a href="home.html"><img class="logo" src="images/logo.svg" alt="logo" /></a>
+        <a href="home.html"><img class="logo" src="images/logo.svg" alt="logo" ></a>
         <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
       </div>
       <nav>
@@ -182,10 +182,10 @@ input:valid + .error{
       </nav>
     </header>
   <div class="wrapper">
-    <form action="#" method="#">
+    <form action="#" method="post">
     <!-- Background Video -->
     <video autoplay muted id="bg-video">
-      <source src="videos/video.mp4" />
+      <source src="videos/video.mp4" >
     </video>
 
     <div class="container">
@@ -270,7 +270,7 @@ input:valid + .error{
             Would you like to receive updates about the website and offers?
           </legend>
           <label for="updates-method">Choose a method:</label>
-          <select id="updates-method" name="subscription-method" required>
+          <select id="updates-method" name="subscription-method">
             <option value="email">Email</option>
             <option value="phone">Mobile Number</option>
             <option value="sms">SMS</option>
@@ -306,10 +306,10 @@ input:valid + .error{
         </fieldset>
         <fieldset>
           <legend>Feedback Submission</legend>
-          <input type="datetime-local" name="date" value="2025-03-10" required >
+          <input type="datetime-local" name="date" value="2025-03-05" required >
         </fieldset>
         <fieldset>
-          <input type="checkbox" name="terms" value="agree" required /> I agree to the
+          <input type="checkbox" name="terms" value="agree" required > I agree to the
           terms and conditions
         </fieldset>
         <script>
@@ -331,9 +331,10 @@ input:valid + .error{
         <!-- Submit Button -->
         <button type="submit" id="submit-btn">Send</button>
         <button type="reset" id="reset-btn">Reset</button>
+    </div>
       </form>
   </div>
-    </div>
+    
   
   </form>
   </div>
