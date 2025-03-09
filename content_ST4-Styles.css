@@ -1,0 +1,152 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-image: url(background2.jpg);*/
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+        
+.energy-link a {
+    padding: 20px 30px; /* Adds padding for button-like feel */
+    background-color: #ffc107; /* Button color */
+    color: black; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.energy1-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.energy1-image{
+    width: 700px;
+    height: 1000px;
+    border-radius: 15px;
+    background-image: url(images/energy1-image.jpg);
+    background-size: cover; /* Scales the image to cover the entire div */
+    background-position: center center;
+    display: flex;
+}
+
+.energy1-box{
+    width: 500px;
+    height: 900px;
+    border-radius: 15px;
+    background-color: greenyellow;
+    padding: 20px;
+}
+
+.energy1-box h1{
+    font-size: 35px;
+}
+
+.energy2-group{
+    width: 100%;
+    height: 900px;
+    margin-top: 0px;
+    margin-bottom: -150px;
+    background-image: url(images/energy2-image.jpg);
+    background-size: cover; /* Scales the image to cover the entire div */
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+
+}
+
+.energy2-box{
+    width: 600px;
+    height: 862px;
+    border-radius: 15px;
+    position: absolute;
+    transform: translateY(0%);
+    background-color: rgb(249, 161, 54);
+    padding: 20px;
+}
+
+.energy2-box h2{
+    font-size: 35px;
+}
+
+.energy3-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.energy3-box{
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: bisque;
+}
+
+.energy3-box h3{
+    font-size: 35px;
+}
+
+.energy3-image{
+    width: 800px;
+    height: 1000px;
+    border-radius: 15px;
+    background-image: url(images/energy3-image.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    transform: translateY(18%)
+}
+
+hr{
+    border: none;
+    height: 5px;
+    background-color: black;
+}
+
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #ffc107; /* Button color */
+    color: black; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
