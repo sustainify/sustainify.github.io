@@ -42,7 +42,7 @@ header a .navlinks {
 }
 
 .navlinks li a:hover {
-  color: #ffc107;
+  color: #fdd003;
 }
 
 .logo-container {
@@ -108,7 +108,7 @@ footer {
 
 .footer-section h3,
 .footer-section h4 {
-  color: #fdd003; /* Amber for consistency */
+  color: #fdd003;
   margin-bottom: 10px;
 }
 
@@ -133,7 +133,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #ffc107;
+  color: #fdd003;
 }
 
 .footer-bottom {
