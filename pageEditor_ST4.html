@@ -114,9 +114,10 @@
           </p>
           <br>
 
-          <p>All 'a' tags were also give 'tabindex=0'this enabled navigation through the sitemap using 'tab' key
-             and all the 'a' tags within navigation bar and footer were given 'tabindex=-1',this kept the tab key
-             navigation from exiting the sitemap and entering the navigation bar & footer
+          <p>All 'a' tags were also give 'tabindex=1,2,3..' according to the required order this enabled 
+            navigation through the sitemap using 'tab' key and all the 'a' tags within navigation bar 
+            and footer were given 'tabindex=-1',this kept the tab key navigation from exiting the 
+            sitemap and entering the navigation bar & footer
           </p>
           <br>
 
@@ -188,9 +189,11 @@
 
         <section>
           <h2 id="challenge">Challenges and Lessons Learned</h2>
-          <p>Challenge</p>
-          <p>Navigating the sitemap using keyboard</p>
-          <p>Initially I put tabindex=1,2,3.. to navigate in an order but later </p>
+          <p>Challenge: Navigating the sitemap using keyboard</p>
+          <p>Initially I put all 'a' tabindex=0 to navigate but it required me to change the html order of 
+            'rect' groups, later I modified to tabindex=1,2,3.. according to required order which did not
+            require me to change the html order
+          </p>
         </section>
 
         <section>
@@ -233,29 +236,11 @@
         <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
         <ul class="top-level-ul">
           <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-          <li>Student 1</li>
-          <ul>
-            <li><a href="#splash">Splash page</a></li>
-            <li><a href="#volunteer">Volunteer page</a></li>
-            <li><a href="#content">Content page</a></li>
-          </ul>
-          <li>Student 2</li>
-          <ul>
-            <li><a href="#">Home page </a></li>
-            <li><a href="#">Table page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 3</li>
-          <ul>
-            <li><a href="#">Feedback page</a></li>
-            <li><a href="#">Team page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
           <li>Student 4</li>
           <ul>
-            <li><a href="#">Profile page </a></li>
-            <li><a href="#">Sitemap page</a></li>
-            <li><a href="#">Content page</a></li>
+            <li><a href="profile.html">Profile page </a></li>
+            <li><a href="sitemap.html">Sitemap page</a></li>
+            <li><a href="content_ST4.html">Content page</a></li>
           </ul>
           <li><a href="#challenge">Challenges and Lessons Learned</a></li>
           <li><a href="#compliance">Compliance</a></li>
