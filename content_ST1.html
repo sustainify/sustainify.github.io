@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- <meta charset="UTF-8" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Smart Planning</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css" />
+
     <style>
-      .container1{
+      .container1 {
         position: relative;
         text-align: center;
         color: rgb(179, 255, 0);
@@ -17,127 +17,123 @@
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         font-weight: bold;
       }
-      #centered{
+      #centered {
         position: absolute;
         top: 19%;
         left: 50%;
-        transform: translate(-50%,-50%);
-      } 
-      #centered2{
+        transform: translate(-50%, -50%);
+      }
+      #centered2 {
         position: absolute;
-        top: 305%;
+        top: 320%;
         left: 40%;
         color: rgb(179, 255, 0);
         font-size: 48px;
         font-family: Arial, Helvetica, sans-serif;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         font-weight: bold;
-        
-
-      } 
-      .container2{
+      }
+      .container2 {
         margin-top: 50px;
         display: flex;
-        padding: 30px; 
+        padding: 30px;
       }
-      .container5{
+      .container5 {
         margin-top: 50px;
         display: flex;
-        padding: 30px; 
+        padding: 30px;
       }
-      .container3{
+      .container3 {
         margin-top: 20px;
         display: flex;
         padding: 10px;
         margin-left: 40px;
       }
-      #box1{
+      #box1 {
         width: 40%;
         border-radius: 10px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
         padding: 20px;
-
       }
-      #box2{
+      #box2 {
         width: 40%;
         border-radius: 10px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
         margin-left: 90px;
         padding: 20px;
       }
-      #box3{
+      #box3 {
         width: 40%;
         border-radius: 10px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
         padding: 20px;
-
       }
-      #box4{
+      #box4 {
         width: 40%;
         border-radius: 10px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
         padding: 20px;
         margin-left: 90px;
-
       }
-      #description1{
+      .description1 {
         width: 60%;
         margin-left: 20px;
         padding: 0 8px;
         border-radius: 10px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
       }
-      #description2{
+      #description2 {
         width: 40%;
         margin-left: 20px;
         padding: 0 8px;
         border-radius: 10px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.2);}
-        #description3{
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      }
+      #description3 {
         width: 80%;
         background-color: #d5eec6;
         margin: 10px;
         margin-left: 150px;
         padding: 0 8px;
         border-radius: 10px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.2);}  
-      #imageside1{
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      }
+      .imageside1 {
         width: 30%;
         max-width: 800px;
         margin: 0 auto;
         padding: 8px;
       }
-      #imageside2{
+      #imageside2 {
         width: 60%;
         max-width: 800px;
         margin: 0 auto;
         margin-right: 50px;
-
       }
-      #img1{
+      .img1 {
         width: 100%;
         margin-top: 40px;
         border-radius: 10px;
       }
-      h3{
+      h3 {
         color: rgb(99, 133, 49);
         padding: 20px;
         margin-left: 20px;
         font-size: 24px;
         font-weight: 900;
       }
-      #table{
-      margin-top: 90px;
-      margin-left: 320px;
-      max-width: 800px;
-      padding: 0 8px;
-      margin-bottom: 30px;
+      #table {
+        margin-top: 90px;
+        margin-left: 320px;
+        max-width: 800px;
+        padding: 0 8px;
+        margin-bottom: 30px;
       }
       #tabledetail {
-      width: 100%;
-      background-color: rgb(219, 241, 205);
-      border: 2px solid gray;
-      border-collapse: collapse;
+        width: 100%;
+        background-color: rgb(219, 241, 205);
+        border: 2px solid gray;
+        border-collapse: collapse;
       }
       .detailsheader th {
         border: 2px solid gray;
@@ -148,228 +144,386 @@
         border: 2px solid gray;
         padding: 8px;
       }
-      #banner2{
+      #banner2 {
         object-fit: cover;
-       }
-       img{
-         width: 100%;
-       }
-
-
+      }
+      img {
+        width: 100%;
+      }
     </style>
-</head>
-<header class="navigation-bar">
-    <div class="logo-container">
-      <a href="home.html"
-        ><img class="logo" src="images/logo.svg" alt="logo"
-      /></a>
-      <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
-    </div>
-    <nav>
-      <ul class="navlinks">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="splash.html">Splash</a></li>
-        <li><a href="sitemap.html">Sitemap</a></li>
-        <li><a href="table.html">Table</a></li>
-        <li><a href="profile.html">User Profile</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-        <li><a class="active" href="team.html">Team</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
+  </head>
   <body>
+    <header class="navigation-bar">
+      <!-- <div class="logo-container">
+        <a href="home.html"
+          ><img class="logo" src="images/logo-transparent.png" alt="logo"
+        /></a>
+        <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
+      </div> -->
+      <nav>
+        <ul class="navlinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="profile.html">User Profile</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a class="active" href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="container1">
-      <img id="banner" src="images/greenins1.jpg" alt="Banner" width="1550" height="650">
-      <div id="centered">Enhancing Sustainable Communities With Green Infrastructure</div>
+      <img
+        id="banner"
+        src="images/greenins1.jpg"
+        alt="Banner"
+        width="1550"
+        height="650"
+      />
+      <div id="centered">
+        Enhancing Sustainable Communities With Green Infrastructure
+      </div>
     </div>
     <div class="container2">
-      <div id="description1">
-        <h2 style=" color:#ffc107; padding: 20px; ">What is Green Infrastructure?</h2>
-        <p style="margin-top: 20px; padding-left: 20px;">Green infrastructure is a system of natural and semi-natural elements designed to manage environmental issues in cities. It uses vegetation and natural processes to improve air and water quality, support biodiversity, and enhance urban sustainability.  
-          Key components include natural vegetation like parks, forests, and green roofs, which absorb rainwater, reduce heat, and provide habitats for wildlife. Water management systems such as rain gardens and permeable pavements help control flooding and recharge groundwater.
-           Urban design integrates green spaces into city planning, promoting walkability and connected environments.  
-          Green infrastructure provides essential ecosystem services, including climate regulation, carbon absorption, and recreational spaces. Its main goal is to restore natural processes, making cities more sustainable,
-           resilient, and livable while also offering economic and social benefits.
-           <a style="color: blue;" href="https://citygreen.com/green-infrastructure-in-urban-planning/" target="_blank">See more</a>
-
+      <div class="description1">
+        <h2 style="color: #ffc107; padding: 20px">
+          What is Green Infrastructure?
+        </h2>
+        <p style="margin-top: 20px; padding-left: 20px">
+          Green infrastructure is a system of natural and semi-natural elements
+          designed to manage environmental issues in cities. It uses vegetation
+          and natural processes to improve air and water quality, support
+          biodiversity, and enhance urban sustainability. Key components include
+          natural vegetation like parks, forests, and green roofs, which absorb
+          rainwater, reduce heat, and provide habitats for wildlife. Water
+          management systems such as rain gardens and permeable pavements help
+          control flooding and recharge groundwater. Urban design integrates
+          green spaces into city planning, promoting walkability and connected
+          environments. Green infrastructure provides essential ecosystem
+          services, including climate regulation, carbon absorption, and
+          recreational spaces. Its main goal is to restore natural processes,
+          making cities more sustainable, resilient, and livable while also
+          offering economic and social benefits.
+          <a
+            style="color: blue"
+            href="https://citygreen.com/green-infrastructure-in-urban-planning/"
+            target="_blank"
+            >See more</a
+          >
         </p>
-        <ul style="margin-top: 20px; padding: 10px; margin-left: 50px; line-height: 40px;">
+        <ul
+          style="
+            margin-top: 20px;
+            padding: 10px;
+            margin-left: 50px;
+            line-height: 40px;
+          "
+        >
           <li>Natural Vegetation</li>
           <li>Water ManagementSystems</li>
           <li>Urban Designs</li>
           <li>Ecosystem Services</li>
         </ul>
       </div>
-        <div id="imageside1">
-          <img id="img1" src="images/cityscape.jpg" alt="image green house">
-        </div>    
+      <div class="imageside1">
+        <img class="img1" src="images/cityscape.jpg" alt="image green house" />
+      </div>
     </div>
-    <div >
-      <h2 style=" color:#ffc107; text-align: center; font-size: 28px;">Benefits of Green Infrastructure in Urban Planning</h2>
+    <div>
+      <h2 style="color: #ffc107; text-align: center; font-size: 28px">
+        Benefits of Green Infrastructure in Urban Planning
+      </h2>
       <div class="container3">
-      <div id="box1">
-        <h3>Improving Air and Water Quality</h3>
-        <p>Green infrastructure helps improve air and water quality in cities. Green spaces act as natural filters by 
-          capturing pollutants and reducing air pollution. Features like bioswales and rain gardens also help manage
-           stormwater and improve water quality.</p>
-      </div>
-      <div id="box2">
-        <h3>Reducing Urban Heat Island Effect</h3>
-        <p>Urban heat islands create challenges for city residents. Green infrastructure, such as green roofs and tree canopies, helps reduce this effect
-           by providing shade, lowering surface temperatures, and cooling the air through evaporation, making cities more comfortable.</p>
-      </div>
+        <div id="box1">
+          <h3>Improving Air and Water Quality</h3>
+          <p>
+            Green infrastructure helps improve air and water quality in cities.
+            Green spaces act as natural filters by capturing pollutants and
+            reducing air pollution. Features like bioswales and rain gardens
+            also help manage stormwater and improve water quality.
+          </p>
+        </div>
+        <div id="box2">
+          <h3>Reducing Urban Heat Island Effect</h3>
+          <p>
+            Urban heat islands create challenges for city residents. Green
+            infrastructure, such as green roofs and tree canopies, helps reduce
+            this effect by providing shade, lowering surface temperatures, and
+            cooling the air through evaporation, making cities more comfortable.
+          </p>
+        </div>
       </div>
       <div class="container3">
-      <div id="box3">
-        <h3>Enhancing Biodiversity and Ecosystem Services</h3>
-        <p>Green infrastructure helps cities support biodiversity and improve ecosystems. Urban green spaces and corridors
-           create habitats for various plants and animals, preserving local wildlife. It also enhances ecosystem services like pollination, carbon absorption, and natural pest control.</p>
+        <div id="box3">
+          <h3>Enhancing Biodiversity and Ecosystem Services</h3>
+          <p>
+            Green infrastructure helps cities support biodiversity and improve
+            ecosystems. Urban green spaces and corridors create habitats for
+            various plants and animals, preserving local wildlife. It also
+            enhances ecosystem services like pollination, carbon absorption, and
+            natural pest control.
+          </p>
+        </div>
+        <div id="box4">
+          <h3>Mitigating Climate Change Effects</h3>
+          <p>
+            Green infrastructure helps cities tackle climate change by
+            increasing vegetation and improving water management. It reduces
+            greenhouse gas emissions, lowers urban temperatures, and strengthens
+            cities' ability to adapt to changing climate conditions.
+          </p>
+        </div>
       </div>
-      <div id="box4">
-        <h3>Mitigating Climate Change Effects</h3>
-        <p>Green infrastructure helps cities tackle climate change by increasing vegetation and improving water management.
-           It reduces greenhouse gas emissions, lowers urban temperatures, and strengthens cities' ability to adapt to 
-           changing climate conditions.</p>
-      </div>
-      </div>
-
     </div>
     <div id="table">
       <table id="tabledetail">
         <tr class="detailsheader">
           <th>Benefits of Green Infrastructure</th>
           <th>Types of Green Infrastructure</th>
-          </tr>
-        <tr class="taiblerows">  
-        <td>Improving Air and Water Quality</td>
-        <td>Green Roofs</td>
-      </tr>
-      <tr class="taiblerows">  
-        <td>Reducing Urban Heat Island Effect</td>
-        <td>Rain Gardens and Bioswales</td>
-      </tr>
-      <tr class="taiblerows">  
-        <td>Enhancing Biodiversity and Ecosystem Services</td>
-        <td>Permeable Pavements and Green Streets</td>
-      </tr>
-      <tr class="taiblerows">  
-        <td>Mitigating Climate Change Effects</td>
-        <td>Urban Forests and Tree Canopies</td>
-      </tr>
-      <tr class="taiblerows">  
-        <td>Promoting Health and Well-being for Urban Residents</td>
-        <td>Green Spaces and Parks</td>
-      </tr>
-      <tr class="taiblerows">  
-        <td>Increases the property value of through trees</td>
-        <td>Blue-Green Infrastructure for Stormwater Management</td>
-      </tr>
+        </tr>
+        <tr class="taiblerows">
+          <td>Improving Air and Water Quality</td>
+          <td>Green Roofs</td>
+        </tr>
+        <tr class="taiblerows">
+          <td>Reducing Urban Heat Island Effect</td>
+          <td>Rain Gardens and Bioswales</td>
+        </tr>
+        <tr class="taiblerows">
+          <td>Enhancing Biodiversity and Ecosystem Services</td>
+          <td>Permeable Pavements and Green Streets</td>
+        </tr>
+        <tr class="taiblerows">
+          <td>Mitigating Climate Change Effects</td>
+          <td>Urban Forests and Tree Canopies</td>
+        </tr>
+        <tr class="taiblerows">
+          <td>Promoting Health and Well-being for Urban Residents</td>
+          <td>Green Spaces and Parks</td>
+        </tr>
+        <tr class="taiblerows">
+          <td>Increases the property value of through trees</td>
+          <td>Blue-Green Infrastructure for Stormwater Management</td>
+        </tr>
       </table>
     </div>
     <div id="container4">
       <div id="centered2">Sri Lankan green-infrastructure Projects</div>
-      <img id="banner2" src="images/building-lake.jpg" alt="Banner lake" height="340">
+      <img
+        id="banner2"
+        src="images/building-lake.jpg"
+        alt="Banner lake"
+        height="340"
+      />
     </div>
     <div class="container2">
-      <div id="description1">
-        <h2 style=" color:#ffc107; padding: 20px; ">Clearpoint Residencies, Rajagiriya</h2>
-        <p style="margin-top: 20px; padding-left: 20px; margin-bottom: 25px;">Clearpoint Residencies is a groundbreaking project spearheaded by Milroy Perera Associates and constructed by Maga Engineering. Dubbed the "world's tallest vertical garden," it stands as Sri Lanka’s first sustainable high-rise apartment complex. Located in Rajagiriya, with breathtaking views of Diyawanna Lake, the project was completed at a cost of Rs. 6 billion.
-          What sets Clearpoint Residencies apart is its innovative green cover, with foliage spanning all 46 floors. This natural insulation system reduces heat absorption, keeping apartments cool and significantly minimizing the need for air conditioning. Each unit features a private garden terrace, further enhancing energy efficiency. As a result, residents enjoy a comfortable indoor climate while consuming considerably less electricity.
-          Although the building has yet to receive LEED certification, its sustainability features are impressive. Solar panels power common areas, including lobby and corridor lighting, elevators, and recycling systems, with a goal to reduce electricity consumption by 40%. The complex also implements a drip irrigation system, recycling wastewater from bathing and washing for flushing and plant irrigation. Additionally, rainwater harvesting and an automated irrigation system further optimize water usage without relying on sprinklers.
-          Looking ahead, the management aims to implement a solid waste separation system, allowing residents to contribute to an environmentally responsible waste disposal process. The separated waste will be sold to relevant authorities, generating revenue for apartment maintenance.
-          Combining luxury with sustainability, Clearpoint Residencies commands a premium price due to its state-of-the-art eco-friendly technology. However, it serves as a pioneering model for the future of sustainable urban living.
-           <a style="color: blue;" href="https://archive.roar.media/english/life/economy/green-buildings-sri-lankas-corporates-can-keep-clean" target="_blank">See more</a>
-
+      <div class="description1">
+        <h2 style="color: #ffc107; padding: 20px">
+          Clearpoint Residencies, Rajagiriya
+        </h2>
+        <p style="margin-top: 20px; padding-left: 20px; margin-bottom: 25px">
+          Clearpoint Residencies is a groundbreaking project spearheaded by
+          Milroy Perera Associates and constructed by Maga Engineering. Dubbed
+          the "world's tallest vertical garden," it stands as Sri Lanka’s first
+          sustainable high-rise apartment complex. Located in Rajagiriya, with
+          breathtaking views of Diyawanna Lake, the project was completed at a
+          cost of Rs. 6 billion. What sets Clearpoint Residencies apart is its
+          innovative green cover, with foliage spanning all 46 floors. This
+          natural insulation system reduces heat absorption, keeping apartments
+          cool and significantly minimizing the need for air conditioning. Each
+          unit features a private garden terrace, further enhancing energy
+          efficiency. As a result, residents enjoy a comfortable indoor climate
+          while consuming considerably less electricity. Although the building
+          has yet to receive LEED certification, its sustainability features are
+          impressive. Solar panels power common areas, including lobby and
+          corridor lighting, elevators, and recycling systems, with a goal to
+          reduce electricity consumption by 40%. The complex also implements a
+          drip irrigation system, recycling wastewater from bathing and washing
+          for flushing and plant irrigation. Additionally, rainwater harvesting
+          and an automated irrigation system further optimize water usage
+          without relying on sprinklers. Looking ahead, the management aims to
+          implement a solid waste separation system, allowing residents to
+          contribute to an environmentally responsible waste disposal process.
+          The separated waste will be sold to relevant authorities, generating
+          revenue for apartment maintenance. Combining luxury with
+          sustainability, Clearpoint Residencies commands a premium price due to
+          its state-of-the-art eco-friendly technology. However, it serves as a
+          pioneering model for the future of sustainable urban living.
+          <a
+            style="color: blue"
+            href="https://archive.roar.media/english/life/economy/green-buildings-sri-lankas-corporates-can-keep-clean"
+            target="_blank"
+            >See more</a
+          >
         </p>
-
       </div>
-        <div id="imageside1">
-          <img id="img1" src="images/greenbuildraja.jpeg" alt="image green house">
-        </div>    
+      <div class="imageside1">
+        <img
+          class="img1"
+          src="images/greenbuildraja.jpeg"
+          alt="image green house"
+        />
+      </div>
     </div>
 
     <div class="container5">
       <div id="imageside2">
-        <img id="img1" src="images/greenbuild2.jpg" alt="image green construction">
-      </div>   
+        <img
+          class="img1"
+          src="images/greenbuild2.jpg"
+          alt="image green construction"
+        />
+      </div>
       <div id="description2">
-        <h2 style=" color:#ffc107; padding: 20px; ">Cinnamon Bey, Beruwala</h2>
-        <p style="margin-top: 20px; padding-left: 20px; margin-bottom: 25px;">Cinnamon Bey became Sri Lanka’s first hotel to achieve LEED Gold certification in 2014. Located in Beruwala, the resort is a favorite among both tourists and locals. To earn this prestigious certification, the hotel secured the minimum 60 points required, with top scores in sustainable site development and water efficiency, according to the United States Green Building Council.
-          A closer look at its sustainability initiatives reveals several key features: 100% energy-efficient lighting and Energy Star-rated equipment, a recycled water system for cistern tanks, vehicle washing, and irrigation, as well as rainwater harvesting. Additionally, the hotel relies on solar hot water systems and heat pumps, significantly reducing energy consumption
-          In a statement celebrating its LEED Gold award, Cinnamon Bey highlighted its 32.2% savings in utility costs and a 65.62% reduction in water usage compared to conventional buildings. During construction, 70% of waste was diverted from landfills to recycling facilities. The hotel also achieved a perfect water efficiency score, primarily due to its ability to eliminate potable water usage for non-drinking purposes. Furthermore, its Erosion and Sedimentation Control System minimizes environmental contamination and pollution.
-          Cinnamon Bey was developed as part of Cinnamon Hotels and Resorts’ pledge, “I Will Be Green,” underscoring its commitment to sustainability. In addition to its environmental efforts, the hotel supports the local community by employing most of its staff from surrounding villages, ensuring that its responsible tourism initiatives benefit the region.
-           <a style="color: blue;" href="https://archive.roar.media/english/life/economy/green-buildings-sri-lankas-corporates-can-keep-clean" target="_blank">See more</a>
+        <h2 style="color: #ffc107; padding: 20px">Cinnamon Bey, Beruwala</h2>
+        <p style="margin-top: 20px; padding-left: 20px; margin-bottom: 25px">
+          Cinnamon Bey became Sri Lanka's first hotel to achieve LEED Gold
+          certification in 2014. Located in Beruwala, the resort is a favorite
+          among both tourists and locals. To earn this prestigious
+          certification, the hotel secured the minimum 60 points required, with
+          top scores in sustainable site development and water efficiency,
+          according to the United States Green Building Council. A closer look
+          at its sustainability initiatives reveals several key features: 100%
+          energy-efficient lighting and Energy Star-rated equipment, a recycled
+          water system for cistern tanks, vehicle washing, and irrigation, as
+          well as rainwater harvesting. Additionally, the hotel relies on solar
+          hot water systems and heat pumps, significantly reducing energy
+          consumption In a statement celebrating its LEED Gold award, Cinnamon
+          Bey highlighted its 32.2% savings in utility costs and a 65.62%
+          reduction in water usage compared to conventional buildings. During
+          construction, 70% of waste was diverted from landfills to recycling
+          facilities. The hotel also achieved a perfect water efficiency score,
+          primarily due to its ability to eliminate potable water usage for
+          non-drinking purposes. Furthermore, its Erosion and Sedimentation
+          Control System minimizes environmental contamination and pollution.
+          Cinnamon Bey was developed as part of Cinnamon Hotels and Resorts’
+          pledge, “I Will Be Green,” underscoring its commitment to
+          sustainability. In addition to its environmental efforts, the hotel
+          supports the local community by employing most of its staff from
+          surrounding villages, ensuring that its responsible tourism
+          initiatives benefit the region.
+          <a
+            style="color: blue"
+            href="https://archive.roar.media/english/life/economy/green-buildings-sri-lankas-corporates-can-keep-clean"
+            target="_blank"
+            >See more</a
+          >
         </p>
       </div>
     </div>
     <div>
       <div id="description3">
-      <p style="padding: 20px; margin: 0 auto;"> The transition towards sustainable cities and communities is no longer an option but a necessity. As urban populations continue to grow, cities must adopt environmentally responsible policies and infrastructure to ensure a high quality of life for future generations. Sustainable urban development integrates green building practices, efficient public transportation, renewable energy sources, and waste management systems to minimize environmental impact while fostering economic and social well-being.
-        By implementing smart urban planning, promoting resource efficiency, and encouraging community participation, cities can reduce their carbon footprint and create healthier, more resilient living spaces. Governments, businesses, and individuals must collaborate to drive innovation and enforce policies that support sustainability.
-        Ultimately, the goal is to build cities that are inclusive, safe, resilient, and sustainable, aligning with United Nations Sustainable Development Goal 11. With the right strategies, sustainable cities can become a model for progress, balancing development with environmental responsibility and social equity. The future of urban living depends on the choices we make today.</p>
-      <p style="padding: 20px;">while individuals and businesses must adopt eco-friendly lifestyles and practices. By integrating sustainability into every aspect of urban life—from energy consumption and waste management to transportation and green spaces—cities can ensure long-term prosperity for both people and the planet</p>
-      <p style="padding: 20px;">Moreover, collaborative efforts between governments, private sectors, and local communities are essential to achieving real progress. Investment in smart technologies, climate-resilient infrastructure, and circular economies can significantly enhance urban sustainability while creating economic opportunities. Sustainable cities should also prioritize social inclusion and equity, ensuring that all residents, regardless of income or background, have access to clean air, safe water, affordable housing, and efficient public services.</p>  
-    <p style="padding: 20px;">The path to truly sustainable cities requires continuous effort, adaptation, and a shared commitment to a greener future. As the challenges of climate change, resource depletion, and urbanization intensify, proactive measures must be taken to transform cities into thriving, sustainable hubs that balance economic growth with environmental and social well-being. The choices made today will define the future of urban living, making it imperative for all stakeholders to take action and contribute towards building a world where cities are not only livable but also resilient and self-sustaining.</p>
-      </div>
-    <img id="img1" src="images/beautiful-city.jpg" style="margin-bottom: 50px; max-width: 800px; margin-left: 25%; border-radius: 10px;" alt="image green city">
-  
-  </div>
-
-  </body>
-<footer>
-    <a href="#top" class="backtotop">Back to Top</a>
-    <div class="footer-container">
-      <div class="footer-section about">
-        <h3 class="footerlogo">
-          <img class="logo" src="images/logo.png" alt="logo" />SUSTAINIFY
-        </h3>
-        <p>
-          SUSTAINIFY promotes sustainable urban development through
-          renewable energy, green infrastructure, and smart planning to
-          create cleaner, healthier, and more resilient communities.
+        <p style="padding: 20px; margin: 0 auto">
+          The transition towards sustainable cities and communities is no longer
+          an option but a necessity. As urban populations continue to grow,
+          cities must adopt environmentally responsible policies and
+          infrastructure to ensure a high quality of life for future
+          generations. Sustainable urban development integrates green building
+          practices, efficient public transportation, renewable energy sources,
+          and waste management systems to minimize environmental impact while
+          fostering economic and social well-being. By implementing smart urban
+          planning, promoting resource efficiency, and encouraging community
+          participation, cities can reduce their carbon footprint and create
+          healthier, more resilient living spaces. Governments, businesses, and
+          individuals must collaborate to drive innovation and enforce policies
+          that support sustainability. Ultimately, the goal is to build cities
+          that are inclusive, safe, resilient, and sustainable, aligning with
+          United Nations Sustainable Development Goal 11. With the right
+          strategies, sustainable cities can become a model for progress,
+          balancing development with environmental responsibility and social
+          equity. The future of urban living depends on the choices we make
+          today.
+        </p>
+        <p style="padding: 20px">
+          while individuals and businesses must adopt eco-friendly lifestyles
+          and practices. By integrating sustainability into every aspect of
+          urban life—from energy consumption and waste management to
+          transportation and green spaces—cities can ensure long-term prosperity
+          for both people and the planet
+        </p>
+        <p style="padding: 20px">
+          Moreover, collaborative efforts between governments, private sectors,
+          and local communities are essential to achieving real progress.
+          Investment in smart technologies, climate-resilient infrastructure,
+          and circular economies can significantly enhance urban sustainability
+          while creating economic opportunities. Sustainable cities should also
+          prioritize social inclusion and equity, ensuring that all residents,
+          regardless of income or background, have access to clean air, safe
+          water, affordable housing, and efficient public services.
+        </p>
+        <p style="padding: 20px">
+          The path to truly sustainable cities requires continuous effort,
+          adaptation, and a shared commitment to a greener future. As the
+          challenges of climate change, resource depletion, and urbanization
+          intensify, proactive measures must be taken to transform cities into
+          thriving, sustainable hubs that balance economic growth with
+          environmental and social well-being. The choices made today will
+          define the future of urban living, making it imperative for all
+          stakeholders to take action and contribute towards building a world
+          where cities are not only livable but also resilient and
+          self-sustaining.
         </p>
       </div>
-
-      <div class="footer-section links">
-        <h4>Links</h4>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="splash.html">Splash</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="table.html">Initiatives</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
-          <li><a href="team.html">Team</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section editors">
-        <h4>Editors</h4>
-        <ul>
-          <li><a href="#">Thinura</a></li>
-          <li><a href="#">Chameen</a></li>
-          <li><a href="#">Akila</a></li>
-          <li><a href="#">Chathila</a></li>
-        </ul>
-      </div>
+      <img
+        class="img1"
+        src="images/beautiful-city.jpg"
+        style="
+          margin-bottom: 50px;
+          max-width: 800px;
+          margin-left: 25%;
+          border-radius: 10px;
+        "
+        alt="image green city"
+      />
     </div>
 
-    <div class="footer-bottom">
-      <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <footer>
+      <a href="#top" class="backtotop">Back to Top</a>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3 class="footerlogo">
+            <img
+              class="logo"
+              src="images/logo-transparent.png"
+              alt="logo"
+            />SUSTAINIFY
+          </h3>
+          <p>
+            SUSTAINIFY promotes sustainable urban development through renewable
+            energy, green infrastructure, and smart planning to create cleaner,
+            healthier, and more resilient communities.
+          </p>
+        </div>
 
+        <div class="footer-section links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="splash.html">Splash</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Initiatives</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
 
-</div>
-    
-</body>
+        <div class="footer-section editors">
+          <h4>Editors</h4>
+          <ul>
+            <li><a href="#">Thinura</a></li>
+            <li><a href="#">Chameen</a></li>
+            <li><a href="#">Akila</a></li>
+            <li><a href="#">Chathila</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
-

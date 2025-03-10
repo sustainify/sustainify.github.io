@@ -6,6 +6,7 @@
     <title>Page Editor Student - provide your student name</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="pageEditor_validator.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo-transparent.png" />
     <!-- External CSS link -->
   </head>
   <body>
@@ -14,7 +15,7 @@
     <header>
       <div class="logo-container">
         <a href="home.html"
-          ><img class="logo" src="images/logo.svg" alt="logo"
+          ><img class="logo" src="images/logo-transparent.png" alt="logo"
         /></a>
         <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
       </div>
@@ -42,27 +43,56 @@
         <!-- Update those first three sections for the pages you were responsible to implement -->
 
         <section>
-          <h2 id="splash">Home Page</h2>
+          <h2 id="home">Home Page</h2>
           <h3>Technical Description</h3>
           <p>
-            Explain the HTML and CSS techniques used to implement this page.
-            Justify the logic and purpose of the key tags and styling choices
-            focusing on functionality and design without copying large code
-            sections. Explain the purpose of key HTML tags and CSS properties.
-            Specify key HTML tags and CSS properties used to create structure
-            and styling.
+            The Home Page of the website is implemented using HTML and CSS to
+            ensure a structured, visually appealing, and user-friendly
+            experience. The page utilizes:
+            <br />
+            Semantic HTML: Tags such as header, nav, main, section and footer
+            provide clear content structure, improving readability and SEO.
+            <br />
+            Navigation Bar (nav): Contains an unordered list (ul) with links (a)
+            for seamless navigation across pages.
+            <br />
+            Content Section: Uses a combination of div containers and CSS
+            flexbox/grid properties to arrange content responsively.
+            <br />
+            CSS for Layout and Styling:
+            <br />
+            max-width, padding, and margin ensure optimal content alignment.
+            <br />
+            flexbox is used for a responsive design that adapts to different
+            screen sizes.
+            <br />
+            font-family and color properties create a visually appealing theme.
+            <br />
+            Image Optimization: Images are assigned appropriate alt attributes
+            and width/height properties to enhance performance.
           </p>
 
           <h3>Accessibility</h3>
           <p>
-            Explain how you used to addressed accessibility in this particular
-            page you implemented.
+            To ensure accessibility, the following measures are implemented:
+            <br />
+            Alt Text for Images: All images have meaningful alt attributes to
+            assist screen readers.
+            <br />
+            Keyboard Navigation: The navigation bar and interactive elements can
+            be accessed via the keyboard (tab key support).
+            <br />
+            High Contrast and Readable Fonts: Adequate color contrast and rem/em
+            font sizes improve readability.
+            <br />
+            ARIA Roles and Landmarks: Used in key sections (role="navigation",
+            role="main") to enhance screen reader support.
           </p>
 
           <h3>Link to the validation page</h3>
           <!-- Update the path to link the Page Editor with the splash page -->
           <p>
-            <a href="validation_ST0.html#splashVal"
+            <a href="validation_ST2.html#homeVal"
               >Include a link to the validation page</a
             >, use the marker to jump to the corresponding section of the
             validation page.
@@ -71,24 +101,38 @@
 
           <h3>Link to the page</h3>
           <p>
-            <a href="splash.html"
+            <a href="home.html"
               >Include a link to the actual page you describe.</a
             >
           </p>
         </section>
 
         <section>
-          <h2 id="volunteer">Table</h2>
+          <h2 id="table">Table</h2>
           <h3>Technical Description</h3>
           <p>
-            Explain the HTML and CSS techniques used to implement this page.
-            Justify the logic and purpose of the key tags and styling choices
-            focusing on functionality and design without copying large code
-            sections. Explain the purpose of key HTML tags and CSS properties.
-            Specify key HTML tags and CSS properties used to create structure
-            and styling.
+            The Table Page is designed to display structured data on sustainable
+            city initiatives. Key implementation details include:
+            <br /><br />
+            HTML Table (table): Used to structure information into rows (tr) and
+            columns (th, td).
+            <br /><br />
+            Responsive Design: CSS media queries hide specific columns on
+            smaller screens to improve readability.
+            <br /><br />
+            overflow-x: auto ensures horizontal scrolling when necessary.
+            <br /><br />
+            Table Styling: border-collapse keeps table borders clean and
+            structured. nth-child(even) applies alternating row colors for
+            better distinction.
+            <br /><br />
+            Hover effects (:hover) provide a subtle interaction cue.
+            <br /><br />
+            Navigation and Branding: The page follows a consistent structure
+            with a header containing the logo and navigation links, ensuring
+            uniformity across the site.
           </p>
-
+          <br />
           <h3>Accessibility</h3>
           <p>
             Explain how you used to addressed accessibility in this particular
@@ -98,7 +142,7 @@
           <h3>Link to the validation page</h3>
           <!-- Update the path to link the Page Editor with the splash page -->
           <p>
-            <a href="validation_ST0.html#volunteerVal"
+            <a href="validation_ST2.html#tableVal"
               >Include a link to the validation page</a
             >, use the marker to jump to the corresponding section of the
             validation page.
@@ -107,7 +151,7 @@
 
           <h3>Link to the page</h3>
           <p>
-            <a href="volunteer.html"
+            <a href="table.html"
               >Include a link to the actual page you describe.</a
             >
           </p>
@@ -134,7 +178,7 @@
           <h3>Link to the validation page</h3>
           <!-- Update the path to link the Page Editor with the splash page -->
           <p>
-            <a href="validation_ST0.html#contentVal"
+            <a href="validation_ST2.html#contentVal"
               >Include a link to the validation page</a
             >, use the marker to jump to the corresponding section of the
             validation page.
@@ -143,7 +187,7 @@
 
           <h3>Link to the page</h3>
           <p>
-            <a href="content.html"
+            <a href="content_ST2.html"
               >Include a link to the actual page you describe.</a
             >
           </p>
@@ -152,19 +196,44 @@
         <section>
           <h2 id="challenge">Challenges and Lessons Learned</h2>
           <p>
-            Detail any challenges encountered during the implementation process
-            and explain how they were resolved. Reflect on the lessons learned
-            from overcoming these challenges.
+            The navigation bar had inconsistencies across different pages due to
+            CSS conflicts. <br />Solution: Ensured that the global CSS file
+            applied a consistent style and standardized spacing and alignment.
+            <br /><br />
+            Some text, especially within table headers, lacked contrast against
+            the background, making it harder to read. <br />
+            Solution: Adjusted text colors to improve readability while
+            maintaining the page’s visual aesthetic. <br /><br />
+            Initially, the table did not display properly on smaller screens,
+            causing text overflow and misalignment. <br />
+            Solution: Implemented CSS media queries to hide less critical
+            columns on mobile devices and added a scrollable container to ensure
+            usability. <br /><br />
+            Mobile-First Design is Essential Designing for smaller screens first
+            ensures a better user experience on all devices. <br />
+            Consistency in CSS Saves Time Maintaining a shared stylesheet
+            prevents unnecessary styling conflicts across different pages.
+            <br />
+            Accessibility Should Be Considered from the Start Implementing
+            semantic HTML and ensuring color contrast from the beginning
+            prevents major fixes later.
           </p>
         </section>
 
         <section>
           <h2 id="compliance">Compliance</h2>
           <p>
-            Discuss how the pages you have created are compliant with Janet
-            regulations governing web page publication. This includes
-            demonstrating your understanding and application of these
-            regulations. Be realistic and truthful.
+            Color Contrast: The text must have sufficient contrast against the
+            background, making it readable for users with visual impairments.
+            <br />Keyboard Navigation: Ensure that all interactive elements,
+            such as forms and navigation menus, are fully navigable using the
+            keyboard for users who cannot use a mouse. <br />
+            Alt Text for Images: All images, including those on the homepage and
+            content pages, should have descriptive alt text to assist screen
+            reader users. <br />
+            Semantic HTML: The use of proper heading structures (e.g., h1, h2,
+            h3) helps users navigate the page content and is essential for
+            screen readers.
           </p>
         </section>
 
@@ -198,29 +267,11 @@
         <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
         <ul class="top-level-ul">
           <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-          <li>Student 1</li>
-          <ul>
-            <li><a href="#splash">Splash page</a></li>
-            <li><a href="#volunteer">Volunteer page</a></li>
-            <li><a href="#content">Content page</a></li>
-          </ul>
           <li>Student 2</li>
           <ul>
-            <li><a href="#">Home page </a></li>
-            <li><a href="#">Table page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 3</li>
-          <ul>
-            <li><a href="#">Feedback page</a></li>
-            <li><a href="#">Team page</a></li>
-            <li><a href="#">Content page</a></li>
-          </ul>
-          <li>Student 4</li>
-          <ul>
-            <li><a href="#">Profile page </a></li>
-            <li><a href="#">Sitemap page</a></li>
-            <li><a href="#">Content page</a></li>
+            <li><a href="home.html">Home page </a></li>
+            <li><a href="table.html">Table page</a></li>
+            <li><a href="content_ST2.html">Content page</a></li>
           </ul>
           <li><a href="#challenge">Challenges and Lessons Learned</a></li>
           <li><a href="#compliance">Compliance</a></li>
@@ -230,11 +281,14 @@
     </div>
 
     <footer>
-      <a href="#top" class="backtotop">Back to Top</a>
       <div class="footer-container">
         <div class="footer-section about">
           <h3 class="footerlogo">
-            <img class="logo" src="images/logo.png" alt="logo" />SUSTAINIFY
+            <img
+              class="logo"
+              src="images/logo-transparent.png"
+              alt="logo"
+            />SUSTAINIFY
           </h3>
           <p>
             SUSTAINIFY promotes sustainable urban development through renewable
