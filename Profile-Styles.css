@@ -36,26 +36,35 @@
 
 .profile-card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-picture-container{
-  width: 350px;
+  width: 330px;
   height: 350px;
-  margin-left: -50px;
+  margin-left: -650px;
   border-radius: 50%;
+  border: 10px solid black;
   background-color: white;
   margin-bottom: 10px;
   margin-top: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-card img {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .achievements {
-  margin-right: 700px ;
+  margin-right: 650px ;
   margin-bottom: 10px;
 }
 .achievements strong{
@@ -137,7 +146,7 @@
   width: 1100px;
   height: 290px;
   display: flex;
-  background: #fbd35b;
+  background: #fad346;
   border-radius: 15px;
   justify-content: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -194,7 +203,7 @@
   width: 1100px;
   height: 227px;
   margin-top: 0;
-  background: #fbcf4c;
+  background: #fbd036;
   border-radius: 15px;
   justify-content: center;
   overflow: hidden;
@@ -230,7 +239,7 @@
 .goals-box {
   width: 1080px;
   height: 250px;
-  background-color: #fccc3d;
+  background-color: #fecd1b;
   border-radius: 15px;
   padding: 10px;
   overflow: hidden;
@@ -280,14 +289,14 @@
   margin-left: 20px;
   margin-top: 0px;
   display: flex;
-  gap:100px;
+  gap:10px;
   max-width: 600px;
 }
 
 .column {
   list-style: none;
   flex: 1;
-  min-width: 360px;
+  min-width: 470px;
   word-break: break-word;
 }
 
@@ -480,12 +489,13 @@
 
 .calendar-box{
   width: 1050px;
-  height: 600px;
+  height: 700px;
   border-radius: 15px;
   padding: 20px;
   background-color: #fcc10e;
-  justify-content: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -494,7 +504,22 @@
   box-shadow: 0px 0px 40px 15px rgba(76, 71, 71, 0.3);
 }
 
+h6{
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+#calendar-hr{
+  margin-top: 10px; /* Add space above the line */
+  width: 100%;
+  height: 6px; /* Define the thickness of the line */
+  border: none;
+  background-color: black;
+  flex-shrink: 0;
+}
+
 .calendar{
+  margin-top: 20px;
   width: 1000px;
   height: 550px;
   border-radius: 15px;
@@ -549,27 +574,20 @@
   background-color: #fccc3d;
 }
 
-.contact-group{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
 
 .contact-box{
-  width: 350px;
+  width: 730px;
   height: 320px;
   border-radius: 10px;
   background-color: white;
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-right: 750px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .contact-box table {
-  width: 350px;
+  width: 730px;
   height: 320px;
   border-collapse: separate;
   border-spacing: 0px;
@@ -608,8 +626,7 @@ td {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-left: 370px;
-  margin-top: -330px;
+  margin-top: 10px;
   background-color: white;
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
