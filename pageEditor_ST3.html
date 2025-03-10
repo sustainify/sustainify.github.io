@@ -1,308 +1,384 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Editor Student - provide your student name</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        
-.wrapper {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pageEditor_validator.css">
+  </head>
 
-.container {
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-main {
-    flex: 3;
-}
-aside {
-    flex: 1;
-    background-color: #f4f4f4;
-    padding: 15px;
-    border: 1px solid #ddd;
-    margin-right: 20px;
-}
-section {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    background-color: #fafafa;
-}
-header, footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
+  <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+  <header class="navigation-bar">
+    <div class="logo-container">
+      <a href="home.html"
+        ><img class="logo" src="images/logo-transparent.png" alt="logo"
+      /></a>
+      <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
+    </div>
+    <nav>
+      <ul class="navlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="splash.html">Splash</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="profile.html">User Profile</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a class="active" href="team.html">Team</a></li>
+      </ul>
+    </nav>
+  </header>
 
-.ref li{
-    list-style: none;
-    padding-bottom: 9px;
-}
-
-aside a{
-    text-decoration : none;
-}
-
-aside li{
-    padding-bottom: 4px;
-}
-
-.stud {
-    text-align: center;
-    line-height: 0;
-    background-color: #cbccc2ef;
-    color: white;
-    margin-top: 8px;
-}
-
-.top {
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-}
-        
-.top a {
-    padding: 10px 20px; /* Adds padding for button-like feel */
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes underline */
-    border-radius: 20px; /* Rounds the corners */
-    font-size: 12px; /* Adjust font size */
-    font-weight: bold; /* Make the text stand out */
-}
-
-.top a:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-}
-
-img{
-    width: 90%;
-}
-
-    </style>
-
-</head>
-
-    
-    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
-    <header class="navigation-bar">
-        <div class="logo-container">
-          <a href="home.html"
-            ><img class="logo" src="images/logo.svg" alt="logo"
-          /></a>
-          <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
-        </div>
-        <nav>
-          <ul class="navlinks">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="splash.html">Splash</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="table.html">Table</a></li>
-            <li><a href="profile.html">User Profile</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a class="active" href="team.html">Team</a></li>
-          </ul>
-        </nav>
-      </header>
-   
-<div class="wrapper">
+  <div class="wrapper">
     <section class="stud">
-        <h2>Akila Wijerama , Feedback Page, Team Page (Student-3)</h2>
+      <h2>Akila Wijerama , Feedback Page, Team Page (Student-3)</h2>
     </section>
 
     <div class="container">
-        <!-- Main content area -->
-        <main>
+      <!-- Main content area -->
+      <main>
+        <!-- Update those first three sections for the pages you were responsible to implement -->
 
-            <!-- Update those first three sections for the pages you were responsible to implement -->
+        <section>
+          <h2 id="feedback">Feedback Page</h2>
+          <h3>Technical Description</h3>
+          <h4>HTML</h4>
+          <p>
+            In the Feedback Page implementation I use class "input-group" to get
+            the user input for name,Email and Mobile-Number. I added some place
+            holders to enhance readabilty and required-title for show some
+            custom instruction to show to user. When it comes to exception
+            handling which user enters some wrong credentials it shows Custom
+            Error message with class="error". I added "fieldset" and "Label"
+            attribute to other sections to get the user input. Program is
+            enhanced with radio button for get specific answers from user and I
+            added the default select as yes for both radio buttons. When it
+            comes to text area field as CW expected to get the word count
+            respectively when user enters. To enhanced the efficiency of the
+            backend server I put maxlenth attribute as 500 which user can't type
+            more.Yes for now we are not using any BackEnd server. Next we have
+            the selection which user can select any options. For get the rating
+            from the user I added some emojis and put some text allign with it
+            when emoji is not readable user can read the text. When it comes to
+            getting files from user I add type="file" for that. When it comes to
+            getting the datetime-local I added default selected value as CW
+            specified. I added some user agreement as we taking some personal
+            details from the user. Now at the end I put Java Script I have to
+            use some Java Script especially for getting the word count from
+            user. Here I put id = "textarea" in the relavent text area fields.
+            Other HTML attributes are go with "header" and "footer" refer
+            <a href="pageEditor_ST2.html">pageEditor_ST2.html</a>
+          </p>
+          <h4>CSS</h4>
+          <p>
+            In the Feedback Page CSS I added video in the background video it's
+            fixed to the page and it's covers entire page. I added container box
+            which all the elements go in that box and I can change it
+            characteristic by it, when opening the page I added some transition
+            which user can see the fadein. When user in some text field I use
+            focus to that It may helps to user to see what box is selected.
+            Fieldset and the Label is used to keep space between the relavent
+            fields. I added specific input for radio button which I can change
+            it. When it comes to button I put "Send" and "Reset" Send button
+            deosn't have any functionality because it doesn't link to any
+            BackEnd server. Error handling is one of keyfeature when it comes to
+            forms. Here I use some CSS styling to it, Yes we can do it by Java
+            Script too but HTML 5 is advanced when it implement by CSS there is
+            a some difficulties. I hope to tell more about it in the challenges
+          </p>
+          <h4>Java Script</h4>
+          <p>
+            For get the word count for textfields I use Java Script thiis I used
+            as internal Script I used word length to count the words and it
+            shows the word count under the relavent text fields
+          </p>
+          <h3>Accessibility</h3>
+          <p>
+            Accessibility is one of key features in the page. I use some
+            accessibility for some screen readers especially when it comes to
+            website it self there are some built in Accessibility featues like
+            reading the page. Users can change the tab by header and footer
+            which provide links to relavent web pages accordingly. You can refer
+            it by <a href="pageEditor_ST2.html">pageEditor_ST2.html</a>
+          </p>
 
-            <section>
-                <h2 id="feedback">Feedback Page</h2>
-                    <h3>Technical Description</h3>
-                    <h4>HTML</h4>
-                        <p>In the Feedback Page implementation I use class "input-group" to get the user input for name,Email and Mobile-Number. I added some place holders to enhance readabilty and required-title for show some custom instruction to show to user. When it comes to exception handling which user enters some wrong credentials it shows Custom Error message with class="error". I added "fieldset" and "Label" attribute to other sections to get the user input. Program is enhanced with radio button for get specific answers from user and I added the default select as yes for both radio buttons. When it comes to text area field as CW expected to get the word count respectively when user enters. To enhanced the efficiency of the backend server I put maxlenth attribute as 500 which user can't type more.Yes for now we are not using any BackEnd server. Next we have the selection which user can select any options. For get the rating from the user I added some emojis and put some text allign with it when emoji is not readable user can read the text. When it comes to getting files from user I add type="file" for that. When it comes to getting the datetime-local I added default selected value as CW specified. I added some user agreement as we taking some personal details from the user. Now at the end I put Java Script I have to use some Java Script especially for getting the word count from user. Here I put id = "textarea" in the relavent text area fields. Other HTML attributes are go with "header" and "footer" refer <a href="pageEditor_ST2.html">pageEditor_ST2.html</a>     </p> 
-                    <h4>CSS</h4>
-                        <p>In the Feedback Page CSS I added video in the background video it's fixed to the page and it's covers entire page. I added container box which all the elements go in that box and I can change it characteristic by it, when opening the page I added some transition which user can see the fadein. When user in some text field I use focus to that It may helps to user to see what box is selected. Fieldset and the Label is used to keep space between the relavent fields. I added specific input for radio button which I can change it. When it comes to button I put "Send" and "Reset" Send button deosn't have any functionality because it doesn't link to any BackEnd server. Error handling is one of keyfeature when it comes to forms. Here I use some CSS styling to it, Yes we can do it by Java Script too but HTML 5 is advanced when it implement by CSS there is a some difficulties. I hope to tell more about it in the challenges </p>
-                    <h4>Java Script</h4>
-                        <p>For get the word count for textfields I use Java Script thiis I used as internal Script I used word length to count the words and it shows the word count  under the relavent text fields</p>
-                        <h3>Accessibility</h3>
-                        <p>Accessibility is one of key features in the page. I use some accessibility for some screen readers especially when it comes to website it self there are some built in Accessibility featues like reading the page. Users can change the tab by header and footer which provide links to relavent web pages accordingly. You can refer it by <a href="pageEditor_ST2.html">pageEditor_ST2.html</a></p>
-                    
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation _ST3.html">Click here</a></p>
-                    
-                        <h3>Link to the page</h3>
-                        <p><a href="feedback.html">Click here</a></p>
-            </section>
+          <h3>Link to the validation page</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p><a href="validation _ST3.html#feedback">Click here</a></p>
 
-            <section>
-                <h2 id="team">Team Page</h2>
-                    <h3>Technical Description</h3>
-                    <h4>HTML</h4>    
-                    <p>In the Team page I added some background video for better visual experience. I use row and columns for keep the card respectively accordingly to the screen and centered it. Every card have class called row and column which describes it placement. I used some class hover-text for when cursor moves there hover the additional detais to each member in here there is a contribution to there tasks in web page. I add some transition to enhance user experience when cursor moves the card text hover from the bottom.</p> 
-                    <h4>CSS</h4>
-                    <p>I use styling to make the program more visually engaging with the user. This wrapper class is used for keep the content within the headr and footer. Section is used to adjust the box elements in the page. h1 is the main topic for each members name row and columns is used to keep gap between each cards. I used some hovering effect to each card as well. Here it goes as when user moves background color is changed to #ffcc00. I used this color from our color pallete. </p>
-                    <h3>Accessibility</h3>
-                        <p>Team Page is rich accessibility featues such as when user moves cursor it automatically shows the contribution of each memeber this helps to user to identify the relavant contribution of each members. Other Accessibility featues are describes same as the Feedback page whih I mentioned earlier.</p>
+          <h3>Link to the page</h3>
+          <p><a href="feedback.html">Click here</a></p>
+        </section>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation _ST3.html#team">Click here</a>
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="team.html">Click here</a></p>
-            </section>
+        <section>
+          <h2 id="team">Team Page</h2>
+          <h3>Technical Description</h3>
+          <h4>HTML</h4>
+          <p>
+            In the Team page I added some background video for better visual
+            experience. I use row and columns for keep the card respectively
+            accordingly to the screen and centered it. Every card have class
+            called row and column which describes it placement. I used some
+            class hover-text for when cursor moves there hover the additional
+            detais to each member in here there is a contribution to there tasks
+            in web page. I add some transition to enhance user experience when
+            cursor moves the card text hover from the bottom.
+          </p>
+          <h4>CSS</h4>
+          <p>
+            I use styling to make the program more visually engaging with the
+            user. This wrapper class is used for keep the content within the
+            headr and footer. Section is used to adjust the box elements in the
+            page. h1 is the main topic for each members name row and columns is
+            used to keep gap between each cards. I used some hovering effect to
+            each card as well. Here it goes as when user moves background color
+            is changed to #ffcc00. I used this color from our color pallete.
+          </p>
+          <h3>Accessibility</h3>
+          <p>
+            Team Page is rich accessibility featues such as when user moves
+            cursor it automatically shows the contribution of each memeber this
+            helps to user to identify the relavant contribution of each members.
+            Other Accessibility featues are describes same as the Feedback page
+            whih I mentioned earlier.
+          </p>
 
-            <section>
-                <h2 id="content">Content Page</h2>
-                    <h3>Technical Description</h3>
-                    <h4>HTML</h4>
-                        <p>I gathered information on Smart Planning in Sri Lanka. I put some title and background picture for id goes as h1 element as the main topic, other sub topic elements are goes with h2 attribute. I used some ul to create an undordered list to put some paragraphs. section attribute used for the seperate the section between subtopics. Every subtopic have some images which relavent to it. In the second topic which descibes Smart Driven Transportation I added two images.</p> 
-                    <h4>CSS</h4>
-                    <p>In the content page I use white bacground which user can read the articles without distrupting. wrapper class works same as I mentioned earlier. section class give some gap between the articles. container is used to adjust the text area accordingly. Images are used to increase more desprective approach to talk about the sub topics and I put it as gallery view. For future referece I added each image a class which is not essential for now but if we need to add more pictures in the page it can be helped and it's easy to identify which increse the readabilty of the program. When it comes to transition I used it for when opening the tab it comes from bottom to up which increase user's visual experience</p>
-                    <h3>Accessibility</h3>
-                        <p>In the content page I added some links which opens other websites that I referenced it helps user to read more about the topic if they are interested. Other accessibility featues are same as I mentioned earlier </p>
+          <h3>Link to the validation page</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p><a href="validation _ST3.html#team">Click here</a></p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation _ST3.html#contentVal">Click here</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+          <h3>Link to the page</h3>
+          <p><a href="team.html">Click here</a></p>
+        </section>
 
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="content_ST3.html">Click here</a></p>
-            </section>
+        <section>
+          <h2 id="content">Content Page</h2>
+          <h3>Technical Description</h3>
+          <h4>HTML</h4>
+          <p>
+            I gathered information on Smart Planning in Sri Lanka. I put some
+            title and background picture for id goes as h1 element as the main
+            topic, other sub topic elements are goes with h2 attribute. I used
+            some ul to create an undordered list to put some paragraphs. section
+            attribute used for the seperate the section between subtopics. Every
+            subtopic have some images which relavent to it. In the second topic
+            which descibes Smart Driven Transportation I added two images.
+          </p>
+          <h4>CSS</h4>
+          <p>
+            In the content page I use white bacground which user can read the
+            articles without distrupting. wrapper class works same as I
+            mentioned earlier. section class give some gap between the articles.
+            container is used to adjust the text area accordingly. Images are
+            used to increase more desprective approach to talk about the sub
+            topics and I put it as gallery view. For future referece I added
+            each image a class which is not essential for now but if we need to
+            add more pictures in the page it can be helped and it's easy to
+            identify which increse the readabilty of the program. When it comes
+            to transition I used it for when opening the tab it comes from
+            bottom to up which increase user's visual experience
+          </p>
+          <h3>Accessibility</h3>
+          <p>
+            In the content page I added some links which opens other websites
+            that I referenced it helps user to read more about the topic if they
+            are interested. Other accessibility featues are same as I mentioned
+            earlier
+          </p>
 
-            <section>
-                <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>The biggest challenge I face when implementing the feedback form. In the feedback form it is more advance than other pages I created. I have to use Java Script to get the word count. While making the pages I mostly avoid Java Script. We started Java Script just now when creating this webpage which I don't have any experience on that I learned it from youtube tutorials and the Linkedin learning. I used documentaion to learn it. I learned a lot about Java Script from making the Feedback Page</p> 
-                    <p>Team page has lot of animation with it like when cursor moves it should shows the Description of each team member. HTML is pretty easy for making Team page I used some tools like Figma to create it. When it comes to CSS it's the most challenging part I faced in the Team pages. I put some hovering effect where CW specified as it is. I learned a lot of CSS attribute from this page</p>
-                    <p>Content page is especially based on HTML which has lot of Description about my conten topic. I implement this at the last I gain a lot of experience from team page and feedback page it helps me a lot to make the content page. It's doesn't have any rich CSS attributes like I used for Team Page. Where I focused on user's readabilty. Here I'm facing some problem some reader's prefer dark background when reading some articles. I tried to add in built in dark background toggle but it requires more knowledge on CSS. Finally I tried to adhere to CW specification and try my best to do it as it says </p>
-                </section>
+          <h3>Link to the validation page</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p><a href="validation _ST3.html#content">Click here</a></p>
+          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-            <section>
-                <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+          <h3>Link to the page</h3>
+          <p><a href="content_ST3.html">Click here</a></p>
+        </section>
 
-                    
-            </section>
+        <section>
+          <h2 id="challenge">Challenges and Lessons Learned</h2>
+          <p>
+            The biggest challenge I face when implementing the feedback form. In
+            the feedback form it is more advance than other pages I created. I
+            have to use Java Script to get the word count. While making the
+            pages I mostly avoid Java Script. We started Java Script just now
+            when creating this webpage which I don't have any experience on that
+            I learned it from youtube tutorials and the Linkedin learning. I
+            used documentaion to learn it. I learned a lot about Java Script
+            from making the Feedback Page
+          </p>
+          <p>
+            Team page has lot of animation with it like when cursor moves it
+            should shows the Description of each team member. HTML is pretty
+            easy for making Team page I used some tools like Figma to create it.
+            When it comes to CSS it's the most challenging part I faced in the
+            Team pages. I put some hovering effect where CW specified as it is.
+            I learned a lot of CSS attribute from this page
+          </p>
+          <p>
+            Content page is especially based on HTML which has lot of
+            Description about my conten topic. I implement this at the last I
+            gain a lot of experience from team page and feedback page it helps
+            me a lot to make the content page. It's doesn't have any rich CSS
+            attributes like I used for Team Page. Where I focused on user's
+            readabilty. Here I'm facing some problem some reader's prefer dark
+            background when reading some articles. I tried to add in built in
+            dark background toggle but it requires more knowledge on CSS.
+            Finally I tried to adhere to CW specification and try my best to do
+            it as it says
+          </p>
+        </section>
 
-            <section>
-                <h2 id="ref">References</h2>
-                <p>Links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
-                    <ul class="ref">
-                        <li>Unplash (2025) <i>colombo</i> Available at: <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka">https://unsplash.com/s/photos/colombo%2C-sri-lanka</a> (Last accessed: 9 March 2025).</li>
-                        <li><i>Sadeep Jayasinghe</i></li>
-                    </ul>
-                    <ul class="ref">
-                        <li>Unplash (2025) <i>colombo</i> Available at: <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka">https://unsplash.com/s/photos/colombo%2C-sri-lanka</a> (Last accessed: 9 March 2025).</li>
-                        <li><i>Dasith Kavin</i></li>
-                    </ul>
-                    <ul class="ref">
-                        <li>Unplash (2025) <i>colombo</i> Available at: <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka">https://unsplash.com/s/photos/colombo%2C-sri-lanka</a> (Last accessed: 9 March 2025).</li>
-                        <li><i>Nitin Gupta</i></li>
-                    </ul>
-                    <ul class="ref">
-                        <li>Unplash (2025) <i>colombo</i> Available at: <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka">https://unsplash.com/s/photos/colombo%2C-sri-lanka</a> (Last accessed: 9 March 2025).</li>
-                        <li><i>Zoshua Colah</i></li>
-                    </ul>
-                    <ul class="ref">
-                        <li>Unplash (2025) <i>colombo</i> Available at: <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka">https://unsplash.com/s/photos/colombo%2C-sri-lanka</a> (Last accessed: 9 March 2025).</li>
-                        <li><i>Ramesh Ranasinge</i></li>
-                    </ul>
-                    
-            </section>
+        <section>
+          <h2 id="compliance">Compliance</h2>
+          <p>
+            Discuss how the pages you have created are compliant with Janet
+            regulations governing web page publication. This includes
+            demonstrating your understanding and application of these
+            regulations. Be realistic and truthful.
+          </p>
+        </section>
 
-            <p class="top"><a href="#top">Go top</a></p>
-        </main>
+        <section>
+          <h2 id="ref">References</h2>
+          <p>
+            Links to resources you used following a consistent format (e.g.,
+            APA, MLA, or a simplified style). For example:<br /><br />
+          </p>
+          <ul class="ref">
+            <li>
+              Unplash (2025) <i>colombo</i> Available at:
+              <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka"
+                >https://unsplash.com/s/photos/colombo%2C-sri-lanka</a
+              >
+              (Last accessed: 9 March 2025).
+            </li>
+            <li><i>Sadeep Jayasinghe</i></li>
+          </ul>
+          <ul class="ref">
+            <li>
+              Unplash (2025) <i>colombo</i> Available at:
+              <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka"
+                >https://unsplash.com/s/photos/colombo%2C-sri-lanka</a
+              >
+              (Last accessed: 9 March 2025).
+            </li>
+            <li><i>Dasith Kavin</i></li>
+          </ul>
+          <ul class="ref">
+            <li>
+              Unplash (2025) <i>colombo</i> Available at:
+              <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka"
+                >https://unsplash.com/s/photos/colombo%2C-sri-lanka</a
+              >
+              (Last accessed: 9 March 2025).
+            </li>
+            <li><i>Nitin Gupta</i></li>
+          </ul>
+          <ul class="ref">
+            <li>
+              Unplash (2025) <i>colombo</i> Available at:
+              <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka"
+                >https://unsplash.com/s/photos/colombo%2C-sri-lanka</a
+              >
+              (Last accessed: 9 March 2025).
+            </li>
+            <li><i>Zoshua Colah</i></li>
+          </ul>
+          <ul class="ref">
+            <li>
+              Unplash (2025) <i>colombo</i> Available at:
+              <a href="https://unsplash.com/s/photos/colombo%2C-sri-lanka"
+                >https://unsplash.com/s/photos/colombo%2C-sri-lanka</a
+              >
+              (Last accessed: 9 March 2025).
+            </li>
+            <li><i>Ramesh Ranasinge</i></li>
+          </ul>
+        </section>
 
-        <!-- Sidebar area -->
-        <aside>
-            <h3>Core pages developed:</h3>
+        <p class="top"><a href="#top">Go top</a></p>
+      </main>
+
+      <!-- Sidebar area -->
+      <aside>
+        <h3>Core pages developed:</h3>
 
         <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
-            <ul class="top-level-ul">
-                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-                <li>Student 1</li>
-                    <ul> 
-                        <li><a href="#">Splash page</a></li>
-                        <li><a href="#">Volunteer page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                <li>Student 2</li>
-                    <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                <li>Student 3</li>
-                    <ul>
-                        <li><a href="#feedback">Feedback page</a> </li>
-                        <li><a href="#team">Team page</a></li>
-                        <li><a href="#content">Content page</a></li>
-                    </ul>
-                <li>Student 4</li>
-                    <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
-                <li><a href="#compliance">Compliance</a></li>
-                <li><a href="#ref">References</a></li>
-            </ul>
-        </aside>
+        <ul class="top-level-ul">
+          <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+          <li>Student 1</li>
+          <ul>
+            <li><a href="#">Splash page</a></li>
+            <li><a href="#">Volunteer page</a></li>
+            <li><a href="#">Content page</a></li>
+          </ul>
+          <li>Student 2</li>
+          <ul>
+            <li><a href="#">Home page </a></li>
+            <li><a href="#">Table page</a></li>
+            <li><a href="#">Content page</a></li>
+          </ul>
+          <li>Student 3</li>
+          <ul>
+            <li><a href="#feedback">Feedback page</a></li>
+            <li><a href="#team">Team page</a></li>
+            <li><a href="#content">Content page</a></li>
+          </ul>
+          <li>Student 4</li>
+          <ul>
+            <li><a href="#">Profile page </a></li>
+            <li><a href="#">Sitemap page</a></li>
+            <li><a href="#">Content page</a></li>
+          </ul>
+          <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+          <li><a href="#ref">References</a></li>
+        </ul>
+      </aside>
     </div>
     <footer>
-        <a href="#top" class="backtotop">Back to Top</a>
-        <div class="footer-container">
-          <div class="footer-section about">
-            <h3 class="footerlogo">
-              <img class="logo" src="images/logo.png" alt="logo" />SUSTAINIFY
-            </h3>
-            <p>
-              SUSTAINIFY promotes sustainable urban development through
-              renewable energy, green infrastructure, and smart planning to
-              create cleaner, healthier, and more resilient communities.
-            </p>
-          </div>
-
-          <div class="footer-section links">
-            <h4>Links</h4>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="splash.html">Splash</a></li>
-              <li><a href="volunteer.html">Volunteer</a></li>
-              <li><a href="table.html">Initiatives</a></li>
-              <li><a href="feedback.html">Feedback</a></li>
-              <li><a href="sitemap.html">Sitemap</a></li>
-              <li><a href="team.html">Team</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section editors">
-            <h4>Editors</h4>
-            <ul>
-              <li><a href="#">Thinura</a></li>
-              <li><a href="#">Chameen</a></li>
-              <li><a href="pageEditor _ST3.html">Akila</a></li>
-              <li><a href="#">Chathila</a></li>
-            </ul>
-          </div>
+      <a href="#top" class="backtotop">Back to Top</a>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3 class="footerlogo">
+            <img class="logo" src="images/logo.png" alt="logo" />SUSTAINIFY
+          </h3>
+          <p>
+            SUSTAINIFY promotes sustainable urban development through renewable
+            energy, green infrastructure, and smart planning to create cleaner,
+            healthier, and more resilient communities.
+          </p>
         </div>
 
-        <div class="footer-bottom">
-          <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+        <div class="footer-section links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="splash.html">Splash</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Initiatives</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
         </div>
+
+        <div class="footer-section editors">
+          <h4>Editors</h4>
+          <ul>
+            <li><a href="#">Thinura</a></li>
+            <li><a href="#">Chameen</a></li>
+            <li><a href="pageEditor _ST3.html">Akila</a></li>
+            <li><a href="#">Chathila</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+      </div>
     </footer>
-</div>
+  </div>
 </html>
