@@ -10,7 +10,7 @@ body {
 
 header li,
 header a {
-  color: #ffc107;
+  color: #fdd003;
   text-decoration: none;
 }
 
@@ -108,7 +108,7 @@ footer {
 
 .footer-section h3,
 .footer-section h4 {
-  color: #ffc107; /* Amber for consistency */
+  color: #fdd003; /* Amber for consistency */
   margin-bottom: 10px;
 }
 
