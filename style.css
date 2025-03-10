@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   font-family: "Open Sans", serif;
@@ -10,7 +14,7 @@ body {
 
 header li,
 header a {
-  color: #ffc107;
+  color: #fdd003;
   text-decoration: none;
 }
 
@@ -42,7 +46,7 @@ header a .navlinks {
 }
 
 .navlinks li a:hover {
-  color: #ffc107;
+  color: #fdd003;
 }
 
 .logo-container {
@@ -66,7 +70,6 @@ header a .navlinks {
 footer {
   background-color: #3c3c3c; /* Dark charcoal gray for contrast */
   color: #ffffff; /* White text for readability */
-  padding: 20px 0;
   text-align: center;
 }
 
@@ -108,7 +111,7 @@ footer {
 
 .footer-section h3,
 .footer-section h4 {
-  color: #ffc107; /* Amber for consistency */
+  color: #fdd003;
   margin-bottom: 10px;
 }
 
@@ -133,7 +136,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #ffc107;
+  color: #fdd003;
 }
 
 .footer-bottom {
