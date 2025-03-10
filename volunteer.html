@@ -36,7 +36,7 @@
         margin-top: -55px;
         margin-left: 750px;
       }
-      .volunteerboxes{
+      #volunteerboxes{
            display: flex;
            margin-top: 50px;
            margin-left: 40px;
@@ -71,10 +71,6 @@
           width: 100%;
           height: 150px;
         }
-        #volun-imgn{
-          width: 100%;
-          height: 150px;
-        }
         .volunteer-description{
             font-family: Poppins;
             font-size: 14px;
@@ -93,6 +89,7 @@
         font-weight: 400;
         line-height: 24px;
         color: #666666;
+      
         }
         .contact-button {
             width: 100%;
@@ -115,7 +112,7 @@
         .pricing-card.card-2{
             background-color: #FFd748;
         }
-        .details_box{
+        #details_box{
            display: flex;
         }
         .detail-box{
@@ -236,36 +233,39 @@
           color:white;
           cursor: pointer;  
         }  
+
+      
+
     </style>
   </head>
   <body>
-    <header>
+    <header class="navigation-bar">
       <div class="logo-container">
-        <a href="home.html"
-          ><img class="logo" src="images/logo.png" alt="logo"
-        /></a>
+        <a href="home.html"><img class="logo" src="images/logo.svg" alt="logo"/></a>
         <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
       </div>
       <nav>
         <ul class="navlinks">
-          <li><a href="home.html">Home</a></li>
+          <li><a class="active" href="home.html">Home</a></li>
           <li><a href="splash.html">Splash</a></li>
           <li><a href="sitemap.html">Sitemap</a></li>
           <li><a href="table.html">Table</a></li>
           <li><a href="profile.html">User Profile</a></li>
-          <li><a class="active" href="volunteer.html">Volunteer</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
           <li><a href="feedback.html">Feedback</a></li>
           <li><a href="team.html">Team</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+
+
+
     <div class="scrollable-section">
         <div id="introd">
-            <h3>69 volunteer programs found</h3>
+            <h1>69 volunteer programs found</h3>
           <div id="sub-heding">
             <p>Matching with 1 Filter</p>
-            <p>Showing 1 to 07 of 69 results</p>
+            <p>Showing 1 to 04 of 69 results</p>
           </div>   
         </div>
 
@@ -279,29 +279,29 @@
             </select>
         </form>
         </div>
-        <div class="volunteerboxes"> 
+        <dive id="volunteerboxes"> 
           <div class="volunteer-box">
               <div class="volunteer-card">
                   <div class="service">
                     Construction and Renovation Assistant
                   </div>
                   <div class="volunteer-img">
-                    <img  id="volun-img" src="images/volunteer1.jpg"  alt="Volunteerimg">
+                    <img  id="volun-img" src="images/volunteer1.jpg" >
                   </div>                
-                  <div class="details_box">
+                  <div id="details_box">
                       <div class="detail-box">
                         <div class="details-card">
-                          <img  style="width: 130%; margin: 0;  margin-top: -13px; "  src="images/edupngready2.png" alt="edu png" >
+                          <img  style="width: 130%; margin: 0;  margin-top: -13px; "  src="images/edupngready2.png" >
                         </div>
                       </div>
                       <div class="detail-box">
                         <div class="details-card">
-                          <img  style="width: 80%; margin: 0; margin-top: -13px; " src="images/timepngready3.png" alt="time png">
+                          <img  style="width: 80%; margin: 0; margin-top: -13px;  " src="images/timepngready3.png" >
                         </div>
                       </div>
                       <div class="detail-box">
                         <div class="details-card">
-                          <img  style="width: 90%; margin: 0;   margin-top: -13px;  " src="images/moneypngready1.png" alt="money png" >
+                          <img  style="width: 90%; margin: 0;   margin-top: -13px;  " src="images/moneypngready1.png" >
                         </div>
                       </div>
                   </div>
@@ -328,22 +328,22 @@
                   Building & Painting Of Rural Schools 
                 </div>
                 <div class="volunteer-img"> 
-                  <img  id="volun-imgn" src="images/volunteer6.jpg" alt="Volunteerimage"  >
+                  <img  id="volun-img" src="images/volunteer6.jpg"  >
                 </div>                
-                <div class="details_box">
+                <div id="details_box">
                   <div class="detail-box">
                     <div class="details-card">
-                      <img  style="width: 130%; margin: 0; margin-top: -13px; "  src="images/edupngready2.png" alt="edu png" >
+                      <img  style="width: 130%; margin: 0;  margin-top: -13px; "  src="images/edupngready2.png" >
                     </div>
                   </div>
                   <div class="detail-box">
                     <div class="details-card">
-                      <img  style="width: 80%; margin: 0; margin-top: -13px; " src="images/timepngready3.png" alt="time png">
+                      <img  style="width: 80%; margin: 0; margin-top: -13px; " src="images/timepngready3.png" >
                     </div>
                   </div>
                   <div class="detail-box">
                     <div class="details-card">
-                      <img  style="width: 90%; margin: 0; margin-top: -13px;  " src="images/moneypngready1.png" alt="moneypng">
+                      <img  style="width: 90%; margin: 0;   margin-top: -13px; " src="images/moneypngready1.png" >
                     </div>
                   </div>
               </div>
@@ -366,29 +366,29 @@
             </div>
           </div>
         </dive>  
-        <dive class="volunteerboxes"> 
+        <dive id="volunteerboxes"> 
           <div class="volunteer-box">
               <div class="volunteer-card">
                   <div class="service">
                     Construction & Renovation Support
                   </div>
                   <div class="volunteer-img">
-                    <img  id="volun-img" src="images/volunteer4.jpg" alt="Volunteerimg" >
+                    <img  id="volun-img" src="images/volunteer4.jpg" >
                   </div>                
-                  <div class="details_box">
+                  <div id="details_box">
                     <div class="detail-box">
                       <div class="details-card">
-                        <img  style="width: 130%; margin: 0;  margin-top: -13px; "  src="images/edupngready2.png" alt="edu png" >                      
+                        <img  style="width: 130%; margin: 0;  margin-top: -13px; "  src="images/edupngready2.png" >                      
                       </div>
                     </div>
                     <div class="detail-box">
                       <div class="details-card">
-                        <img  style="width: 80%; margin: 0; margin-top: -13px;  " src="images/timepngready3.png" alt="time png">
+                        <img  style="width: 80%; margin: 0; margin-top: -13px;  " src="images/timepngready3.png" >
                       </div>
                     </div>
                     <div class="detail-box">
                       <div class="details-card">
-                        <img  style="width: 90%; margin: 0;   margin-top: -13px;  " src="images/moneypngready1.png" alt="money png" >
+                        <img  style="width: 90%; margin: 0;   margin-top: -13px;  " src="images/moneypngready1.png" >
                       </div>
                     </div>
                 </div>
@@ -415,22 +415,22 @@
                   Construction of School Library at Government School
                 </div>
                 <div class="volunteer-img">
-                  <img  id="volun-img" src="images/volunteer5.jpg" alt="Volunteerimg"  >
+                  <img  id="volun-img" src="images/volunteer5.jpg" >
                 </div>                
-                <div class="details_box">
+                <div id="details_box">
                   <div class="detail-box">
                     <div class="details-card">
-                      <img  style="width: 130%; margin: 0;  margin-top: -13px;  "  src="images/edupngready2.png" alt="edu png">
+                      <img  style="width: 130%; margin: 0;  margin-top: -13px;  justify-content: center;"  src="images/edupngready2.png" >
                     </div>
                   </div>
                   <div class="detail-box">
                     <div class="details-card">
-                      <img  style="width: 80%; margin: 0; margin-top: -13px;  " src="images/timepngready3.png" alt="time png">
+                      <img  style="width: 80%; margin: 0; margin-top: -13px;   justify-content: center;" src="images/timepngready3.png" >
                     </div>
                   </div>
                   <div class="detail-box">
                     <div class="details-card">
-                      <img  style="width: 90%; margin: 0;   margin-top: -13px;  " src="images/moneypngready1.png" alt="money png">
+                      <img  style="width: 90%; margin: 0;   margin-top: -13px; justify-content: center; " src="images/moneypngready1.png" >
                     </div>
                   </div>
               </div>
@@ -446,7 +446,7 @@
                       This means the children had to walk for 14 kilometers back and forth under the scorching heat without shoes. 
                       It was  too stressful and discouraging to acquire education in this area.
                       We are looking for volunteers to help us FINISH this
-                      project with a bang!!! We still have a library, and arts theatre to build and Health care centre to complete.. Join us in doing a work out
+                      project with a bang!!! We still have a library, and arts theatre to build and Health care centre to complete. Join us in doing a work out
                        with a purpose through construction, landscaping and environmental  conservation activities.  We are open to sustainable ideas and initiatives.
                         Let us know how you can help us realize this dream by joining us.
                     </p>    
@@ -457,7 +457,6 @@
           </div>
         </dive>  
       </div>
-    </div>
 
     <div id="rating-section">
       <div class="rating-detail-section">
@@ -472,7 +471,7 @@
 
         <h4>Recent reviews</h4>
         <div id="human-reviews" >
-          <div class="review" style="border-radius: 10px;padding: 10px;border: 1px solid gray; margin-right: 20px;" >
+          <dive class="review" style="border-radius: 10px;padding: 10px;border: 1px solid gray; margin-right: 20px;" >
             <h5 style="margin-bottom: 10px;">9.4/10 Excelent</h5>
             <div style="font-family: Poppins; font-weight: 200;">From day 1 I felt really welcomed. 
               The community and kids are very kind and have big heart. Construction is a hard work but it's very nice to
@@ -502,19 +501,14 @@
           <h5 style="margin-top: 50px; font-family: Poppins; font-weight: 500; font-size: 16px;">Send US Your review</h5>
           <p style="color: black; font-size: 14px; margin-top: 20px; font-family: Poppins; margin-bottom: 10px;" >GOt suggestions? We'd love to hear them!<span style="color: #8A8A8A;">(Optional)</span></p>
           <textarea id="textarea" rows="10" cols="80"></textarea>
-          <p style="color: #2F2F2F; font-size: 12px; font-family: Poppins; margin-top: 50px; max-width: 200px;" >Privacy Policy &nbsp; &nbsp; Help Center</p>
+          <p style="color: #2F2F2F; font-size: 12px; font-family: Poppins; margin-top: 50px; max-width: 200px;" >Privacy Policy &nbsp &nbsp Help Center</p>
           <button id="send-feedback-button"> Send Feedback </button>
           <button id="cancel-button"> Cancel </button>
         </div>
       </div>
     </div>
 
-      </div>
-    </main>
-    
-    <p class="top">
-      <a href="#top">Go to top</a>
-    </p>
+        
     <footer>
       <div class="footer-container">
         <div class="footer-section about">
