@@ -126,16 +126,31 @@
             background: url('images/smart.jpg') no-repeat center center/cover;
             height: 300px;
         }
-        #title{
+        .title{
             color: rgb(178, 175, 175)
         }
+        navi {
+    text-align:center;
+  }
+
+navi a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+navi a:hover {
+    color: #ffc107;
+}
         
     </style>
 </head>
 <header class="navigation-bar">
     <div class="logo-container">
       <a href="home.html"
-        ><img class="logo" src="images/logo.svg" alt="logo"></a>
+        ><img class="logo" src="images/logo-transparent.png" alt="logo"></a>
       <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
     </div>
     <nav>
@@ -156,12 +171,18 @@
 <div class="wrapper">
 <h1 class="parallax" id="backimg1"> Smart Planning</h1>
 
-<h2 id="title">Redefining Future Through Smart Planning</h2>
+<h2 class="title">Redefining Future Through Smart Planning </h2>
+<navi>
+  <p><a href="#western">Western Province Megapolis Project</a></p>
+  <p><a href="#transport">Smart Driven Transportation</a></p>
+  <p><a href="#clean">Clean Sri Lanka Initiative</a></p>
+  <p><a href="#smart">Smart Sri Lanka Initiative</a></p>
+</navi>
 
 <br>
 
 <div class="container">
-<section>
+<section id="western">
 <h2>1.Western Province Megapolis Project</h2>
 <p>Launched 2015</p>
 <p>this comprehensive urban development plan aims to transform the Western Province into a megapolis by 2030</p>
@@ -180,7 +201,7 @@
 
 <div class="container">
 <img src="images/portcity.jpg" alt="port city" class="imageR">
-<section>
+<section id="transport">
 <h2>Smart Driven Transportation</h2>
 <p>Port City Colombo</p>
 <p>this comprehensive urban development plan aims to transform the Western Province into a megapolis by 2030</p>
@@ -201,7 +222,7 @@
 
 <div class="container">
 <img src="images/cleansrilanka.jpg" alt="cleansrilanka" class="imageS">
-<section class="left">
+<section id="clean">
 <h2>Clean Sri Lanka Initiative</h2>
 <p>The Clean Sri Lanka Initiative is a comprehensive nationwide program launched by the Sri Lankan government to transform the country into a cleaner, greener, and more sustainable nation. Here are key aspects of the initiative:</p>
 <p>Launched on January 1, 2025, the Clean Sri Lanka initiative aims to tackle pressing environmental issues while promoting socio-economic growth. This initiative aligns with Smart City projects that utilize technology to enhance urban living, addressing challenges such as waste management and traffic congestion through sustainability pillars of governance, economy, environment, and society <a href="https://cleansrilanka.gov.lk/">See more</a>  </p>
@@ -212,7 +233,7 @@
 <div class="container">
 
 
-<section>
+<section id="smart">
 <h2>Smart Sri Lanka Initiative</h2>
 <p>The Smart Sri Lanka Initiative is a broad effort to transform Sri Lanka into a digitally empowered nation, focusing on innovation, inclusion, and sustainable growth3. It involves various projects and strategies across different sectors.</p>
 <ul>
@@ -257,10 +278,7 @@
       <div class="footer-section editors">
         <h4>Editors</h4>
         <ul>
-          <li><a href="#">Thinura</a></li>
-          <li><a href="#">Chameen</a></li>
-          <li><a href="#">Akila</a></li>
-          <li><a href="#">Chathila</a></li>
+          <li><a href="pageEditor_ST3.html">Akila</a></li>
         </ul>
       </div>
     </div>
