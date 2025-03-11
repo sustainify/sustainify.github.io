@@ -41,7 +41,7 @@
   align-items: center;
 }
 
-.profile-picture-container{
+.profile-picture-container {
   width: 330px;
   height: 350px;
   margin-left: -650px;
@@ -64,14 +64,14 @@
 }
 
 .achievements {
-  margin-right: 650px ;
+  margin-right: 650px;
   margin-bottom: 10px;
 }
-.achievements strong{
+.achievements strong {
   color: white;
 }
 
-.profile-info-box{
+.profile-info-box {
   height: 476px;
   width: 800px;
   border-radius: 15px;
@@ -102,11 +102,11 @@
   margin-left: 150px;
 }
 
-.basic-info strong{
+.basic-info strong {
   color: #ffc107;
 }
 
-.basic-info p{
+.basic-info p {
   color: rgb(137, 133, 133);
 }
 
@@ -134,13 +134,12 @@
   font-size: 25px;
 }
 
-.decorative img{
+.decorative img {
   width: 800px;
   height: 330px;
   margin-left: 250px;
-  margin-top: -155px;  
+  margin-top: -155px;
 }
-
 
 .skill-box {
   width: 1100px;
@@ -157,7 +156,7 @@
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-.skill-box-topic{
+.skill-box-topic {
   height: 70px;
   width: 100px;
   margin-left: 400px;
@@ -195,7 +194,7 @@
   color: rgb(123, 118, 118);
 }
 
-.skills label{
+.skills label {
   font-size: 20px;
 }
 
@@ -289,7 +288,7 @@
   margin-left: 20px;
   margin-top: 0px;
   display: flex;
-  gap:10px;
+  gap: 10px;
   max-width: 600px;
 }
 
@@ -307,7 +306,7 @@
   font-weight: 800;
 }
 
-.column p{
+.column p {
   display: inline-block;
   color: rgb(123, 118, 118);
   font-size: 20px;
@@ -432,16 +431,16 @@
   background-color: black;
 }
 
-.UN-goals-list{
+.UN-goals-list {
   margin-top: 15px;
   list-style: none; /*Removes default bullets */
   display: flex; /* Align items in a row */
-  gap: 125px; 
+  gap: 125px;
   padding: 0; /* Removes defalt padding */
   justify-content: center; /* Centers items horizontally */
 }
 
-.goal{
+.goal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -461,7 +460,7 @@
   transform: translateY(-5px); /* Slight lift effect */
 }
 
-.UN-goals-image-container img{
+.UN-goals-image-container img {
   width: 100px;
   height: 100px;
   border-radius: 13px;
@@ -486,8 +485,7 @@
   opacity: 1; /* Make it visible */
 }
 
-
-.calendar-box{
+.calendar-box {
   width: 1050px;
   height: 700px;
   border-radius: 15px;
@@ -499,17 +497,17 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.calendar-box:hover{
+.calendar-box:hover {
   transform: translateY(-5px);
   box-shadow: 0px 0px 40px 15px rgba(76, 71, 71, 0.3);
 }
 
-h6{
+h6 {
   font-size: 50px;
   margin-top: 0px;
 }
 
-#calendar-hr{
+#calendar-hr {
   margin-top: 10px; /* Add space above the line */
   width: 100%;
   height: 6px; /* Define the thickness of the line */
@@ -518,7 +516,7 @@ h6{
   flex-shrink: 0;
 }
 
-.calendar{
+.calendar {
   margin-top: 20px;
   width: 1000px;
   height: 550px;
@@ -529,11 +527,10 @@ h6{
   display: flex;
 }
 
-.month-year{
+.month-year {
   font-size: 40px;
   font-weight: 500;
   margin-left: 400px;
-
 }
 
 .calendar table {
@@ -546,7 +543,8 @@ h6{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.calendar th, td {
+.calendar th,
+td {
   border: 1px solid #ddd;
   text-align: center;
   padding: 15px;
@@ -554,7 +552,7 @@ h6{
 
 .calendar th {
   height: 30px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
@@ -566,16 +564,15 @@ h6{
   background-color: #eee;
 }
 
-.calendar td p{
+.calendar td p {
   margin-right: -70px;
 }
 
-.sheduled{
+.sheduled {
   background-color: #fccc3d;
 }
 
-
-.contact-box{
+.contact-box {
   width: 730px;
   height: 320px;
   border-radius: 10px;
@@ -619,8 +616,7 @@ td {
   text-decoration: none;
 }
 
-
-.contact-me-box{
+.contact-me-box {
   width: 700px;
   height: 305px;
   align-items: center;
@@ -642,8 +638,7 @@ td {
   border-color: #ffc30d;
 }
 
-
-.contact-me-box:hover{
+.contact-me-box:hover {
   transform: translateY(-5px);
   box-shadow: 0px 0px 40px 15px rgba(76, 71, 71, 0.3);
 }

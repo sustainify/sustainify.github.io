@@ -45,53 +45,67 @@
           <h2 id="profile">User Profile</h2>
           <h3>Technical Description</h3>
           <h4>HTML</h4>
-            <p>Seperated the infromation into different classes by doing so I was able to get flexibilty in arranging
-                ,grouping information. I used 'ul' or unordered list to display 'Goals','Fustrations',
-                'UN goals I support' futher more I used seperate div classes to hold icons & images in 'Goals','Fustrations',
-                'UN goals I support'
-            </p>
-            <br>
-            <p>Used simple table to display month of march as of a calander and to display the contact details
-                of the user. Tn the contact-details table I used 'href' in both email & linkedIn details so that
-                clicking the email will open Outlook mail and clicking the linkedIn will open a new tab and be directed
-                to the users' profile.
-            </p>
-            <br>
-            <p>For the contact-me-section I used a 'form' with 'action=#' as there is no place to send the 
-                submitted inforation.For the name input I set the 'type=text' defined a max-minlength.
-                And for the email input I set the 'type=email' so missing '@' will be detected, defined max-minlength
-                aswell.
-            </p>
-            <br>
+          <p>
+            Seperated the infromation into different classes by doing so I was
+            able to get flexibilty in arranging ,grouping information. I used
+            'ul' or unordered list to display 'Goals','Fustrations', 'UN goals I
+            support' futher more I used seperate div classes to hold icons &
+            images in 'Goals','Fustrations', 'UN goals I support'
+          </p>
+          <br />
+          <p>
+            Used simple table to display month of march as of a calander and to
+            display the contact details of the user. Tn the contact-details
+            table I used 'href' in both email & linkedIn details so that
+            clicking the email will open Outlook mail and clicking the linkedIn
+            will open a new tab and be directed to the users' profile.
+          </p>
+          <br />
+          <p>
+            For the contact-me-section I used a 'form' with 'action=#' as there
+            is no place to send the submitted inforation.For the name input I
+            set the 'type=text' defined a max-minlength. And for the email input
+            I set the 'type=email' so missing '@' will be detected, defined
+            max-minlength aswell.
+          </p>
+          <br />
 
-            <h5>CSS</h5>
-            <p>Included all rectangles inside a parent tag that has 'flex-direction:column' & 'align-item:center'
-                amoung it's other styles, this kept all the rectangles in a column wise. When defining profile-picture-rectangle
-                 & 'basic-information-rectangle' I used 'clip-path: polygon()' which game me the flexibility to create
-                 other different shapes inorder to make a eye-catching profile
-            </p>
-            <br>
-            <p>Displayed the listed items of 'Goals' & 'UN goals I support' as a row by excersing 'display:flex'
-                 & 'gap:' css styles
-            </p>
-            <p>Made a small dicription on UN goals icons that becomes visble only during hovering this wasdone
-                by using 'opacity:', opacity is changed from 0 to 1 during hover which makes it visible.
-            </p>
-            <br>
-
+          <h5>CSS</h5>
+          <p>
+            Included all rectangles inside a parent tag that has
+            'flex-direction:column' & 'align-item:center' amoung it's other
+            styles, this kept all the rectangles in a column wise. When defining
+            profile-picture-rectangle & 'basic-information-rectangle' I used
+            'clip-path: polygon()' which game me the flexibility to create other
+            different shapes inorder to make a eye-catching profile
+          </p>
+          <br />
+          <p>
+            Displayed the listed items of 'Goals' & 'UN goals I support' as a
+            row by excersing 'display:flex' & 'gap:' css styles
+          </p>
+          <p>
+            Made a small dicription on UN goals icons that becomes visble only
+            during hovering this wasdone by using 'opacity:', opacity is changed
+            from 0 to 1 during hover which makes it visible.
+          </p>
+          <br />
 
           <h3>Accessibility</h3>
           <p>
-            All rectangles are implemented with hover effect wich raises the container while displaying a
-             shadow below it, Hovering over the icons in 'UN goals I support' displays a small hidden
-              discription on that icon.
+            All rectangles are implemented with hover effect wich raises the
+            container while displaying a shadow below it, Hovering over the
+            icons in 'UN goals I support' displays a small hidden discription on
+            that icon.
           </p>
-          <br>
+          <br />
 
           <h3>Link to the validation page</h3>
           <!-- Update the path to link the Page Editor with the splash page -->
           <p>
-            <a href="validation_ST4.html#profileVal">Go to User Profile Validation report</a>
+            <a href="validation_ST4.html#profileVal"
+              >Go to User Profile Validation report</a
+            >
           </p>
           <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
@@ -105,50 +119,64 @@
           <h2 id="sitemap">Sitemap</h2>
           <h3>Technical Description</h3>
           <h4>HTML</h4>
-          <p>Included 'viewbox=' so the content will size properly according to the screen size, added 
-            'preserveAspectRatio=xMidYMid meet' so that the svg will align itself at the center of the container.
-            Defined an 'arrowhead' using 'marker' tag that can be used when pointing towards a 'rect'. All
-            'rect' groups are inside a parent 'g' and all the 'lines' are inside a seperate 'g' group this made
-            it easier to make changes. All groups with 'rect' were given the same class for easier styling.
-            'rect' & 'text' were kept within a 'a' tag within the 'a' tag the relevant 'href' was implemented.
+          <p>
+            Included 'viewbox=' so the content will size properly according to
+            the screen size, added 'preserveAspectRatio=xMidYMid meet' so that
+            the svg will align itself at the center of the container. Defined an
+            'arrowhead' using 'marker' tag that can be used when pointing
+            towards a 'rect'. All 'rect' groups are inside a parent 'g' and all
+            the 'lines' are inside a seperate 'g' group this made it easier to
+            make changes. All groups with 'rect' were given the same class for
+            easier styling. 'rect' & 'text' were kept within a 'a' tag within
+            the 'a' tag the relevant 'href' was implemented.
           </p>
-          <br>
+          <br />
 
-          <p>All 'a' tags were also give 'tabindex=1,2,3..' according to the required order this enabled 
-            navigation through the sitemap using 'tab' key and all the 'a' tags within navigation bar 
-            and footer were given 'tabindex=-1',this kept the tab key navigation from exiting the 
-            sitemap and entering the navigation bar & footer
+          <p>
+            All 'a' tags were also give 'tabindex=1,2,3..' according to the
+            required order this enabled navigation through the sitemap using
+            'tab' key and all the 'a' tags within navigation bar and footer were
+            given 'tabindex=-1',this kept the tab key navigation from exiting
+            the sitemap and entering the navigation bar & footer
           </p>
-          <br>
+          <br />
 
-          <p>At the end of each line 'marker-end=' was added so it would be pointing towards the given object
+          <p>
+            At the end of each line 'marker-end=' was added so it would be
+            pointing towards the given object
           </p>
-          <br>
+          <br />
 
           <h5>CSS</h5>
-          <P>'rect' border radius,fill color was defined to the parent group of all 'rect' groups, this avoids
-             needing to add them line by line, 'cursor:pointer' was also defined so that it would change upon
-              moving over the 'rect'. added 'pointer-events:none' to the text so that the rectangle and text
-              would act as a single element.
-          </P>
-          <br>
-
-          <p>Added ':focus' and '':hover' to rect and text so that they would change color upon navigating
-             using tab key or hovering over using the cursor
+          <p>
+            'rect' border radius,fill color was defined to the parent group of
+            all 'rect' groups, this avoids needing to add them line by line,
+            'cursor:pointer' was also defined so that it would change upon
+            moving over the 'rect'. added 'pointer-events:none' to the text so
+            that the rectangle and text would act as a single element.
           </p>
-          <br>
+          <br />
+
+          <p>
+            Added ':focus' and '':hover' to rect and text so that they would
+            change color upon navigating using tab key or hovering over using
+            the cursor
+          </p>
+          <br />
 
           <h3>Accessibility</h3>
           <p>
-            Can naviate through the sitemap using tab key, changes rectangle and text color on the one that you
-            have selected.
+            Can naviate through the sitemap using tab key, changes rectangle and
+            text color on the one that you have selected.
           </p>
-          <br>
+          <br />
 
           <h3>Link to the validation page</h3>
           <!-- Update the path to link the Page Editor with the splash page -->
           <p>
-            <a href="validation_ST4.html#sitemapVal">Go to Sitemap Validation Report</a>
+            <a href="validation_ST4.html#sitemapVal"
+              >Go to Sitemap Validation Report</a
+            >
           </p>
           <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
@@ -162,37 +190,45 @@
           <h2 id="content">Content Page</h2>
           <h3>Technical Description</h3>
           <h4>HTML & CSS</h4>
-          <p>Created buttons that navigate to specific content of the page by using 'a' tag and id's. 
-            Created vertical rectangles to display information and pictures, all the rectangles are
-            inside a container with 'flex-direction:column' styling.Used 'ul' to list points in the content.
+          <p>
+            Created buttons that navigate to specific content of the page by
+            using 'a' tag and id's. Created vertical rectangles to display
+            information and pictures, all the rectangles are inside a container
+            with 'flex-direction:column' styling.Used 'ul' to list points in the
+            content.
           </p>
-          <br>
+          <br />
 
           <h3>Accessibility</h3>
-          <p>Buttons are present at the top to navigate to the specific content of the page
+          <p>
+            Buttons are present at the top to navigate to the specific content
+            of the page
           </p>
-          <br>
+          <br />
 
           <h3>Link to the validation page</h3>
           <!-- Update the path to link the Page Editor with the splash page -->
           <p>
-            <a href="validation_ST4.html#contentVal">Go to Content Validation Report</a>
+            <a href="validation_ST4.html#contentVal"
+              >Go to Content Validation Report</a
+            >
           </p>
           <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
           <h3>Link to the page</h3>
           <p>
-            <a href="content_ST4.html">Go to Content Page</a
-            >
+            <a href="content_ST4.html">Go to Content Page</a>
           </p>
         </section>
 
         <section>
           <h2 id="challenge">Challenges and Lessons Learned</h2>
           <p>Challenge: Navigating the sitemap using keyboard</p>
-          <p>Initially I put all 'a' tabindex=0 to navigate but it required me to change the html order of 
-            'rect' groups, later I modified to tabindex=1,2,3.. according to required order which did not
-            require me to change the html order
+          <p>
+            Initially I put all 'a' tabindex=0 to navigate but it required me to
+            change the html order of 'rect' groups, later I modified to
+            tabindex=1,2,3.. according to required order which did not require
+            me to change the html order
           </p>
         </section>
 
@@ -209,15 +245,21 @@
         <section>
           <h2 id="ref">References</h2>
           <ul class="ref">
-            <li> 
+            <li>
               Photo by Kelly Pexels (2025) <i>Pexels</i> Available at:
-              <a href="https://www.pexels.com/photo/modern-solar-power-station-in-countryside-4320475/ ">https://www.pexels.com</a> (Last accessed: 8
-              Mar 2025).
+              <a
+                href="https://www.pexels.com/photo/modern-solar-power-station-in-countryside-4320475/ "
+                >https://www.pexels.com</a
+              >
+              (Last accessed: 8 Mar 2025).
             </li>
             <li>
               Photo by Kindel Pexels (2025) <i>Pexels</i> Available at:
-              <a href="https://www.pexels.com/photo/landscape-sky-buildings-industry-9799737/">https://www.pexels.com</a> (Last accessed: 8
-              Mar 2025).
+              <a
+                href="https://www.pexels.com/photo/landscape-sky-buildings-industry-9799737/"
+                >https://www.pexels.com</a
+              >
+              (Last accessed: 8 Mar 2025).
             </li>
           </ul>
         </section>
