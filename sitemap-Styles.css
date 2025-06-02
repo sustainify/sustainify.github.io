@@ -27,15 +27,15 @@
 }
 
 .node a:focus-within text {
-  fill: red;
+  fill: gold;
 }
 
 .node rect:hover {
-  fill: #3c3c3c;
+  fill: blue;
 }
 
 .node:hover text {
-  fill: red;
+  fill: gold;
 }
 
 line {
